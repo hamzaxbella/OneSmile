@@ -8,23 +8,27 @@ import {
   phone,
   threads,
   tiktok,
-} from "../assets/icons";
+  burger_menu,
+  accordion
+} from '../assets/icons'
 
 import {
-  about,
-  contactBanner,
-  hero,
-  logo,
   service1,
   service2,
   service3,
   service4,
-  serviceBanner,
   ex1,
   ex2,
   ex3,
   ex4,
 } from "../assets/images";
+
+export const socialLinks = [
+  {icon : facebook , path : 'https://www.facebook.com/onesmilemaroc' , alt : 'one smile facebook'},
+  {icon : instagram , path : 'https://www.instagram.com/onesmile.maroc' , alt : 'one smile instagram'},
+  {icon : threads , path : 'https://www.threads.net/@onesmile.maroc' , alt : 'one smile threads'},
+  {icon : tiktok , path : 'https://www.tiktok.com/@onesmilemaroc' , alt : 'one smile tiktok'},
+]
 
 export const PrimaryLinks = {
   FR: [
@@ -54,15 +58,15 @@ export const secondaryLinks = {
 
 export const HeroContent = {
   FR: [
-    { Title: "Illuminez Votre Sourire, Rayonnez de Confiance – One Smile" },
     {
+      Title: "Illuminez Votre Sourire, Rayonnez de Confiance – One Smile",
       Description:
         "Découvrez la magie d'un sourire éclatant avec One Smile. Nos traitements de blanchiment dentaire vous offrent un sourire resplendissant et une confiance retrouvée.",
     },
   ],
   AR: [
-    { Title: "أحصل على ابتسامة مشرقة مع - One Smile" },
     {
+      Title: "أحصل على ابتسامة مشرقة مع - One Smile",
       Description:
         "اكتشف سحر الابتسامة المبهرة مع One Smile. توفر لك علاجات تبييض الأسنان لدينا ابتسامة متألقة وثقة جديدة.",
     },
@@ -71,95 +75,93 @@ export const HeroContent = {
 
 export const AboutContent = {
   FR: [
-    { Title: "À propos de nous." },
     {
+      Title: "À propos de nous.",
       Description:
         "Basé à Agadir au Maroc, One Smile est le cabinet de blanchiment dentaire de référence, offrant une vaste gamme de services pour répondre à tous vos besoins en matière de blanchiments dentaires. Fort d'une expérience de plusieurs années, notre établissement s'est distingué par son professionnalisme et son dévouement à fournir des résultats exceptionnels. Nous avons eu le privilège de servir de nombreux clients, leur procurant des sourires radieux et une confiance retrouvée.",
     },
   ],
   AR: [
-    { Title: "حولنا" },
     {
+      Title: "حولنا",
       Description:
         "يقع مقر عيادة One Smile في مدينة أغادير بالمغرب، وهي العيادة الرائدة في مجال تبييض الأسنان، حيث تقدم مجموعة واسعة من الخدمات لتلبية جميع احتياجات تبييض الأسنان الخاصة بك. مع سنوات عديدة من الخبرة، تميزت عادتنا بمهنيتها وتفانيها في تقديم نتائج استثنائية. لقد كان لنا شرف خدمة العديد من العملاء، وتزويدهم بابتسامات مشرقة وثقة جديدة.",
     },
   ],
 };
 
+
 export const ServicesContent = [
   {
-    FR: [
-      { Title: "Blanchiment-éclairciement dentaire" },
+    FR: 
       {
+        Title: "Blanchiment-éclairciement dentaire",
         Description:
           "Obtenez un sourire plus éclatant et rayonnant grâce à notre traitement professionnel de blanchiment des dents. En utilisant une technologie de blanchiment avancée, nous éliminons efficacement les taches et la décoloration, vous laissant avec un sourire éblouissant que vous aimerez montrer.",
+        img: service1,
       },
-      { img: service1 },
-    ],
-    AR: [
-      { Title: "تبييض وتلميع الاسنان" },
+    
+    AR:
       {
+        Title: "تبييض وتلميع الاسنان",
         Description:
           "احصل على ابتسامة أكثر إشراقًا وإجمالا مع علاج تبييض الأسنان الاحترافي لدينا. باستخدام تقنية تبييض متقدمة، نقوم بإزالة البقع وتغير اللون بشكل فعال، مما يترك لك ابتسامة مبهرة ستحب التباهي بها.",
+        img: service1,
       },
-      { img: service1 },
-    ],
   },
   {
-    FR: [
-      { Title: "Détartrage et polissage" },
+    FR:
       {
+        Title: "Détartrage et polissage",
         Description:
           "Maintenez une santé bucco-dentaire optimale avec notre service de dépistage du tartre. Nos professionnels dentaires qualifiés utilisent des techniques douces mais efficaces pour éliminer en toute sécurité l'accumulation de tartre, aidant à prévenir les maladies des gencives et à promouvoir le bien-être dentaire global.",
+        img: service2,
       },
-      { img: service2 },
-    ],
-    AR: [
-      { Title: "حولنا" },
+    AR:
       {
+        Title: "إزالة الجير",
         Description:
           "حافظ على صحة الفم المثالية من خلال خدمة فحص الجير لدينا. يستخدم أطباء الأسنان المدربون لدينا تقنيات لطيفة وفعالة لإزالة تراكم الجير بأمان، مما يساعد على الوقاية من أمراض اللثة وتعزيز صحة الأسنان بشكل عام.",
+        img: service2,
       },
-      { img: service2 },
-    ],
   },
   {
-    FR: [
-      { Title: "Snap-On Smile" },
+    FR:
       {
+        Title: "Snap-On Smile",
         Description:
           "Transformez instantanément votre sourire avec notre service Snap-On Smiley. Cette solution innovante vous permet d'obtenir un sourire impeccable sans recourir à des interventions invasives. Il vous suffit de clipser l'appareil personnalisé sur vos dents naturelles pour dissimuler les imperfections et améliorer l'apparence de votre sourire.",
+        img: service3,
       },
-      { img: service3 },
-    ],
-    AR: [
-      { Title: "ابتسامة سريعة" },
+    AR:
       {
+        Title: "ابتسامة سريعة",
         Description:
           "قم بتحويل ابتسامتك على الفور من خلال خدمة Snap-On Smiley الخاصة بنا. يتيح لك هذا الحل المبتكر تحقيق ابتسامة خالية من العيوب دون اللجوء إلى إجراءات جراحية. ما عليك سوى تثبيت الجهاز المخصص على أسنانك الطبيعية لإخفاء العيوب وتحسين مظهر ابتسامتك.",
+        img: service3,
       },
-      { img: service3 },
-    ],
   },
   {
-    FR: [
-      { Title: "Bijoux Dentaires & grillz" },
+    FR:
       {
+        Title: "Bijoux Dentaires & grillz",
         Description:
           "Ajoutez une touche d'éclat à votre sourire avec nos options de bijoux dentaires. Choisissez parmi une variété de designs élégants pour orner vos dents et exprimer votre personnalité unique. Nos bijoux dentaires sont sûrs, non invasifs et facilement amovibles, vous permettant de changer de look à votre guise.",
+        img: service4,
       },
-      { img: service4 },
-    ],
-    AR: [
-      { Title: "مجوهرات الأسنان " },
-      {
+    AR:
+      { Title: "مجوهرات الأسنان " ,
         Description:
           "أضف لمسة من التألق إلى ابتسامتك مع خيارات مجوهرات الأسنان لدينا. اختر من بين مجموعة متنوعة من التصاميم الأنيقة لتزيين أسنانك والتعبير عن شخصيتك الفريدة. مجوهرات الأسنان لدينا آمنة وغير جراحية وقابلة للإزالة بسهولة، مما يسمح لك بتغيير مظهرك كما يحلو لك.",
+        img: service4,
       },
-      { img: service4 },
-    ],
   },
 ];
+
+export const CallToActionTitle = {
+  FR : 'Prendre un rendez-vous',
+  AR : 'أحجز موعدا'
+}
 
 export const FAQ = {
   FR: [
@@ -184,6 +186,28 @@ export const FAQ = {
       A: "Non, cela n'entraîne aucun dommage aux dents lorsqu'il est effectué par des experts. Le blanchiment des dents, réalisé par des professionnels dentaires qualifiés, est considéré comme sûr. Il est essentiel de suivre leurs conseils et d'utiliser des produits de blanchiment dentaire approuvés pour garantir des résultats optimaux sans nuire aux dents. Si vous avez des préoccupations, il est toujours recommandé de consulter un professionnel dentaire pour obtenir des conseils personnalisés.",
     },
   ],
+  AR: [
+    {
+      Q: "ما هي الخدمات التي تقدمها عيادة الأسنان الخاصة بنا؟",
+      A: "تقدم عيادتنا لتبييض الأسنان مجموعة من الخدمات المتخصصة، بما في ذلك تبييض الأسنان، إزالة الجير وتلميع الأسنان، تركيب سناب أون سمايل، بالإضافة إلى تركيب مجوهرات الأسنان .",
+    },
+    {
+      Q: "ما هو تبييض الأسنان وكيف يعمل؟",
+      A: "تبييض الأسنان هو علاج تجميلي يهدف إلى تفتيح لون الأسنان لإعطائها مظهرًا أبيض ومشرق أكثر. يعمل عن طريق استخدام وكلاء التبييض الذين يخترقون المينا لتبييض الأسنان وإزالة البقع والتلون.",
+    },
+    {
+      Q: "ما هي الخيارات المتاحة للدفع لدينا؟",
+      A: "نقدم العديد من الخيارات المرنة للدفع لعلاجاتنا لتبييض الأسنان، بما في ذلك الدفع نقدًا، أو باستخدام بطاقات الائتمان أو الخصم.",
+    },
+    {
+      Q: "كم يستغرق علاج تبييض الأسنان؟",
+      A: "يمكن أن تختلف مدة علاج تبييض الأسنان اعتمادًا على عدة عوامل، بما في ذلك نوع العلاج المستخدم وشدة بقع الأسنان. بشكل عام، يمكن أن يستغرق علاج تبييض الأسنان بين 30 دقيقة إلى 2 ساعة في جلسة واحدة في العيادة.",
+    },
+    {
+      Q: "هل يسبب التبييض  ضررًا للأسنان؟",
+      A: "لا، لا يسبب أي ضرر للأسنان عندما يتم إجراؤه بواسطة خبراء. يعتبر تبييض الأسنان، عند إجرائه بواسطة متخصصين طب الأسنان المؤهلين، آمنًا. من الضروري اتباع توجيهاتهم واستخدام منتجات تبييض الأسنان المعتمدة لضمان النتائج المثلى دون إلحاق ضرر بالأسنان. إذا كان لديك أي مخاوف، فمن المستحسن دائمًا استشارة طبيب الأسنان المتخصص للحصول على نصائح مخصصة.",
+    },
+  ],
 };
 
 // Services page :
@@ -195,7 +219,8 @@ export const ServiceBanner = {
   },
   AR: {
     title: "أحصل على إبتسامة مشرقة مع  - One Smile",
-    Description : "في One Smile، نقدم لك علاجات أسنان متطورة لتكشف عن أجمل ابتسامتك. ثق بفريقنا ذو الخبرة للحصول على نتائج استثنائية ورفاهية مثالية."
+    Description:
+      "في One Smile، نقدم لك علاجات أسنان متطورة لتكشف عن أجمل ابتسامتك. ثق بفريقنا ذو الخبرة للحصول على نتائج استثنائية ورفاهية مثالية.",
   },
 };
 
@@ -226,7 +251,7 @@ export const ServiceArticle = {
       "القضاء الفعّال على البقع وتغيير اللون",
       "تحسين الثقة بالنفس وتقدير الذات",
       "إجراء سريع ومريح",
-      "نتائج دائمة مع العناية السنية المناسبة",
+      "نتائج دائمة مع العناية لتبييض الأسنان المناسبة",
       "امنح نفسك ابتسامة أحلامك مع خدمتنا لتبييض الأسنان المحترفة. اكتشف الثقة الجديدة بنفسك ودع ابتسامتك تشع بألف نور في One Smile.",
     ],
   },
@@ -235,30 +260,52 @@ export const ServiceArticle = {
 export const BeforAfterImages = [ex1, ex2, ex3, ex4];
 
 export const ContactBanner = {
-    FR: {
-      title: "Prenez Contact pour un Sourire Radieux.",
-      Description:
-        "Chez One Smile, nous vous proposons des traitements dentaires haut de gamme pour révéler votre plus beau sourire. Faites-nous confiance pour des résultats exceptionnels et un bien-être optimal. Contactez-nous dès aujourd'hui pour commencer votre voyage vers un sourire éclatant et radieux.",
-    },
-    AR: {
-      title: "أحصل على إبتسامة مشرقة مع  - One Smile",
-      Description : "في One Smile، نقدم لك علاجات أسنان متطورة لتكشف عن أجمل ابتسامتك. ثق بفريقنا ذو الخبرة للحصول على نتائج استثنائية ورفاهية مثالية."
-    },
-  };
+  FR: {
+    title: "Prenez Contact pour un Sourire Radieux.",
+    Description:
+      "Chez One Smile, nous vous proposons des traitements dentaires haut de gamme pour révéler votre plus beau sourire. Faites-nous confiance pour des résultats exceptionnels et un bien-être optimal. Contactez-nous dès aujourd'hui pour commencer votre voyage vers un sourire éclatant et radieux.",
+  },
+  AR: {
+    title: "أحصل على إبتسامة مشرقة مع  - One Smile",
+    Description:
+      "في One Smile، نقدم لك علاجات أسنان متطورة لتكشف عن أجمل ابتسامتك. ثق بفريقنا ذو الخبرة للحصول على نتائج استثنائية ورفاهية مثالية.",
+  },
+};
 
 export const contactInfo = {
-    FR : [
-        {title : 'Email' , lable : "si vous avez des questions, n'hisitez a nous contactez." , link : "osmile.be@gmail.com"},
-        {title : 'Téléphone' , lable : "Appelez-nous et nous vous assistera rapidement" , link : "osmile.be@gmail.com"},
-        {title : 'Email' , lable : "Venez a notre cabinet et laissez-nous vous aider a obtenir beau sourire " , link : "+212 6 58 54 72 64"},
-    
-    ] , 
-    AR : [
-        {title : 'البريد الإلكتروني' , lable : "لا تتردد بالتواصل معنا إدا كان لديك اي سؤال." , link : "osmile.be@gmail.com"},
-        {title : 'الهاتف' , lable : "اتصل بنا وسنساعدك في الحين" , link : "osmile.be@gmail.com"},
-        {title : 'Email' , lable : "زرنا في عيادتنا ودعنا نصمم ابتسامتك" , link : "+212 6 58 54 72 64"},
-
-    ]
-}
-    
-  
+  FR: [
+    {
+      title: "Email",
+      lable: "si vous avez des questions, n'hisitez a nous contactez.",
+      link: "osmile.be@gmail.com",
+    },
+    {
+      title: "Téléphone",
+      lable: "Appelez-nous et nous vous assistera rapidement",
+      link: "osmile.be@gmail.com",
+    },
+    {
+      title: "Email",
+      lable:
+        "Venez a notre cabinet et laissez-nous vous aider a obtenir beau sourire ",
+      link: "+212 6 58 54 72 64",
+    },
+  ],
+  AR: [
+    {
+      title: "البريد الإلكتروني",
+      lable: "لا تتردد بالتواصل معنا إدا كان لديك اي سؤال.",
+      link: "osmile.be@gmail.com",
+    },
+    {
+      title: "الهاتف",
+      lable: "اتصل بنا وسنساعدك في الحين",
+      link: "osmile.be@gmail.com",
+    },
+    {
+      title: "Email",
+      lable: "زرنا في عيادتنا ودعنا نصمم ابتسامتك",
+      link: "+212 6 58 54 72 64",
+    },
+  ],
+};

@@ -7,7 +7,8 @@ import location from "./location.svg"
 import phone from "./phone.svg"
 import threads from "./threads.svg"
 import tiktok from "./tiktok.svg"
-
+import burger_menu from "./burger_menu.svg"
+import accordion from './accordion.svg'
 
 export {
     arrow_left,
@@ -18,5 +19,7 @@ export {
     location,
     phone,
     threads,
-    tiktok
+    tiktok,
+    burger_menu,
+    accordion
 }
