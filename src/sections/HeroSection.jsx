@@ -12,7 +12,7 @@ export const HeroSection = () => {
   const Titlefont = selectedLanguage === "FR" ? "font-Inria" : "font-Cairo";
 
   return (
-    <section className="hero-height max-container padding-x flex flex-col md:flex-row gap-6 padding-y">
+    <section className="lg:hero-height max-container padding-x flex flex-col md:flex-row gap-6 padding-y">
       <article className="flex-1 flex items-center ">
         <div className="flex flex-col gap-6">
           <h1 dir={textdir} className={`text-4xl ${Titlefont} font-light`}>{content.Title}</h1>

@@ -4,6 +4,7 @@ import { Context}  from "../App";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
+import { CopyRight } from "./CopyRight";
 export const Footer = () => {
   const [selectedLanguage, setSelectedLanguage] = useContext(Context);
   const font = selectedLanguage === "FR" ? "font-Inter" : "font-Cairo";
@@ -56,7 +57,7 @@ export const Footer = () => {
             {primaryLinksContent.map((link) => (
               <Link
                 dir={textdir}
-                className="text-text-gray hover:text-gray-400"
+                className={`${font} font-light text-text-gray hover:text-gray-400`}
                 key={link.name}
                 to={link.path}
               >
@@ -74,7 +75,7 @@ export const Footer = () => {
             {secondaryLinksContent.map((link) => (
               <Link
                 dir={textdir}
-                className="text-text-gray hover:text-gray-400"
+              className={`${font} font-light text-text-gray hover:text-gray-400`}
                 key={link.name}
                 to={link.path}
               >
