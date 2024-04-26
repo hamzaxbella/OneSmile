@@ -9,7 +9,7 @@ import { Map } from "../components/Map";
 export const RouteLayout = () => {
   return (
     <div className="root-layout">
-      {/* <ScrollRestoration /> */}
+      <ScrollRestoration />
       <NavBar />
       <main>
         <Outlet /> {/* Render the child routes here */}

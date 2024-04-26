@@ -34,7 +34,7 @@ export const Accordion = ({ title, answer }) => {
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div dir={textdir} className={`${font} ${accordionOpen ? 'block' : 'hidden'} overflow-hidden ml-14 py-4 text-lg font-light leading-8`}>{answer}</div>
+        <div dir={textdir} className={`${font} ${accordionOpen ? 'block' : 'hidden'} overflow-hidden ${selectedLanguage === 'FR' ? 'ml-14' : 'mr-14'}  py-4 text-lg font-light leading-8`}>{answer}</div>
       </div>
     </div>
   );
