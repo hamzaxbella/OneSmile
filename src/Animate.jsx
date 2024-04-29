@@ -39,11 +39,11 @@ export const Animate = () => {
         delay: 2,
         stagger: 0.2,
       });
-      // gsap.from("#hero-img", {
-      //   height: 0,
-      //   duration: 2,
-      //   ease: "expo.inOut",
-      // });
+      gsap.from("#hero-img", {
+        opacity: 0,
+        duration: 2,
+        ease: "expo.inOut",
+      });
     },
     { scope: "#hero-section" }
   );
