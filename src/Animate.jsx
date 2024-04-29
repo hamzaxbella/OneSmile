@@ -40,7 +40,7 @@ export const Animate = () => {
         stagger: 0.2,
       });
       gsap.from("#hero-img", {
-        height: 10,
+        height: 0,
         duration: 2,
         ease: "expo.inOut",
       });
@@ -94,8 +94,8 @@ export const Animate = () => {
           trigger: "#about-text",
           start: "top 80%",
           end: "bottom 80%",
-          delay : .5,
-          scrub : 1,
+          delay: 0.5,
+          scrub: 1,
         },
 
         opacity: 0,
@@ -147,7 +147,9 @@ export const Animate = () => {
           duration: 1,
         });
       });
+      console.log("its working");
     },
+
     { scope: "#services-section" }
   );
 
@@ -157,8 +159,8 @@ export const Animate = () => {
         trigger: "#faq",
         toggleActions: "play play play play", // Prevents the animation from being reversed
         start: "top 100%",
-        end : 'bottom 80%',
-        scrub : 1,
+        end: "bottom 80%",
+        scrub: 1,
       },
       duration: 1,
       opacity: 0,

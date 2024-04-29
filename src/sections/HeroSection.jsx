@@ -26,7 +26,7 @@ export const HeroSection = () => {
         </div>
       </article>
       <article className="flex-1 w-full">
-        <img id="hero-img" className=" object-cover w-[600px] h-[530px]" src={hero}  alt="image of a woman smiling" />
+        <img id="hero-img" className=" object-cover w-[400px] h-[400px] md:w-[600px] md:h-[530px]" src={hero}  alt="image of a woman smiling" />
       </article>
     </section>
   );
