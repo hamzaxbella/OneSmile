@@ -4,12 +4,20 @@ import { BeforeAfter} from "../sections/BeforeAfter"
 import { Testimonials } from '../sections/Testimonials'
 // import { ServicesSection } from '../sections/ServicesSection'
 import { CallToAction  } from "../sections/CallToAction"
+import {serviceBanner } from "../assets/images"
+import { Context } from "../App"
+import { useContext } from "react"
+import { ServiceBannerContent } from "../constants"
 
 export const Services = () => {
+
+  const [selectedLanguage] = useContext(Context); // Accessing selectedLanguage from the context
+  const banner = selectedLanguage === "FR" ? ServiceBannerContent.FR : ServiceBannerContent.AR;  
+
   return (
     <section>
       <section>
-        <Banner />
+        <Banner img={serviceBanner} Title={banner.title} description={banner.Description}/>
       </section>
 
       <section>

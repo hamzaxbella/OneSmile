@@ -99,7 +99,7 @@ export const Footer = () => {
           </form>
           <div className={`flex gap-3 mt-4 cursor-pointer hover:transfor ${selectedLanguage === 'AR' && 'flex-row-reverse'}`}>
             {socialLinks.map((icon) => (
-              <a className="hover:-translate-y-1/3" href={icon.path} target="_blank">< img src={icon.icon} alt={icon.alt} width={25} height={25}/></a>
+              <a className=" transition-transform duration-300 hover:-translate-y-1/3" href={icon.path} target="_blank">< img src={icon.icon} alt={icon.alt} width={25} height={25}/></a>
             ))}
           </div>
         </div>

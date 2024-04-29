@@ -3,6 +3,7 @@ import { FAQ } from "../constants";
 import { Context } from "../App";
 import { useContext } from "react";
 import { Accordion } from "../components/Accordion";
+import { accordion } from "../assets/icons";
 
 export const FAQsection = () => {
   const [selectedLanguage] = useContext(Context);
@@ -11,9 +12,9 @@ export const FAQsection = () => {
   const Content = selectedLanguage === "FR" ? FAQ.FR : FAQ.AR;
 
   return (
-    <section className="section-spacing max-w-[1000px] mx-auto">
+    <section id='faq' className="faq section-spacing max-w-[1000px] mx-auto">
       <div className="relative text-center mb-6">
-        <h1 dir={textdir} className={`${Titlefont} text-4xl`}>
+        <h1 dir={textdir} className={` section-title ${Titlefont} text-4xl`}>
           {selectedLanguage === "FR" ? "FAQ" : "أسئلة متكررة"}
         </h1>
         <div
@@ -22,7 +23,7 @@ export const FAQsection = () => {
       </div>
 
       {Content.map((faq) => (
-        <Accordion title={faq.Q} answer={faq.A} />
+        <Accordion key={accordion.Q} title={faq.Q} answer={faq.A} />
       ))}
     </section>
   );

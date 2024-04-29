@@ -2,16 +2,20 @@ import { Context } from "../App";
 import { useContext, useState } from "react";
 import { ServicesContent } from "../constants";
 
+
 export const ServicesSection = () => {
   const [selectedLanguage] = useContext(Context);
   const textdir = selectedLanguage === "AR" ? "rtl" : "ltr";
   const font = selectedLanguage === "FR" ? "font-Inter" : "font-Cairo";
   const Titlefont = selectedLanguage === "FR" ? "font-Inria" : "font-Cairo";
 
+
+
+  
   return (
-    <section className="padding-y">
+    <section className="section padding-y" id="services-section">
       <div className="relative text-center mb-6">
-        <h1 dir={textdir} className={`${Titlefont} text-4xl`}>
+        <h1 dir={textdir} className={` ${Titlefont} section-title text-4xl`}>
           {selectedLanguage === "FR" ? "Nos Services" : "خدماتنا"}
         </h1>
         <div
@@ -35,7 +39,7 @@ export const ServicesSection = () => {
               <div className="flex flex-col justify-center gap-6">
                 <h3
                   dir={index % 2 === 0 ? 'ltr' : 'rtl'}
-                  className={`${Titlefont} ${
+                  className={` service-text ${Titlefont} ${
                     index % 2 === 0 && "text-white"
                   } font-semibold text-2xl`}
                 >
@@ -44,7 +48,7 @@ export const ServicesSection = () => {
                     : service.AR.Title}
                 </h3>
                 <p
-                  className={` ${
+                  className={`service-text ${
                     index % 2 === 0 && " text-white-smoke"
                   } ${font} font-light leading-8`}
                   dir={index % 2 === 0 ? 'ltr' : 'rtl'}
@@ -55,6 +59,7 @@ export const ServicesSection = () => {
                 </p>
               </div>
               <img
+              className="service-img "
                 width={300}
                 src={
                   selectedLanguage === "FR" ? service.FR.img : service.AR.img

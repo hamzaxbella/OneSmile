@@ -12,7 +12,7 @@ export const Accordion = ({ title, answer }) => {
 
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
-    <div className="max-container padding-x py-4 border-thin">
+    <div className="accordion max-container padding-x py-4 border-thin">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className={`${selectedLanguage === 'FR' ? 'flex-row-reverse' : 'flex-row'} flex  justify-end items-center gap-6 text-start py-2 w-full`}

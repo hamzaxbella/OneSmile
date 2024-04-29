@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from "react";
 import {
   createBrowserRouter,
@@ -6,7 +5,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { RouteLayout } from './layouts/RouteLayout'
+import { RouteLayout } from "./layouts/RouteLayout";
 import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
@@ -14,6 +13,7 @@ import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { Services } from "./pages/Services";
 import { SitePlan } from "./pages/SitePlan";
 import { TermsOfUse } from "./pages/TermsOfUse";
+import { Animate } from "./Animate";
 
 export const Context = React.createContext();
 
@@ -32,12 +32,19 @@ function App() {
     )
   );
 
+
   const [selectedLanguage, setSelectedLanguage] = useState("FR");
+  const textdir = selectedLanguage === "AR" ? "rtl" : "ltr";
+  const Titlefont = selectedLanguage === "FR" ? "font-Inria" : "font-Cairo";
+  const font = selectedLanguage === "FR" ? "font-Inter" : "font-Cairo";
+
+
 
   return (
     <div className="App">
-      <Context.Provider value={[selectedLanguage, setSelectedLanguage]}>
+      <Context.Provider value={[selectedLanguage, setSelectedLanguage]} >
         <RouterProvider router={router} />
+        <Animate />
       </Context.Provider>
     </div>
   );

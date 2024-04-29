@@ -46,7 +46,7 @@ export const NavBar = () => {
   return (
   <header className={`${isHeaderSticky ? 'sticky top-0 shadow-xl !border-0' : ''} w-full z-40 transition-all bg-light-cream border-b-2 border-dark-cream border-opacity-20`}>
       <nav className="w-full h-[60px] padding-x max-container m-auto flex justify-between">
-        <img src={logo} height={49} alt="OneSmile logo mr-auto" />
+        <img id="logo" src={logo} height={49} alt="OneSmile logo mr-auto" />
         <div className="flex items-center gap-12">
           <ul
             ref={menuRef}
@@ -56,12 +56,13 @@ export const NavBar = () => {
           >
             <div className={`flex gap-6 ${navOpen && 'w-full flex-col text-center'}`}>
               {PrimaryLinks[selectedLanguage].map((navLink) => (
-                <li key={navLink.name} className={`${font} text-gray-600 ${navOpen ? 'w-full text-white-smoke' : ''}`}>
+                <li key={navLink.name} className={`${font} nav-links text-gray-600 ${navOpen ? 'w-full text-white-smoke' : ''}`}>
                   <NavLink to={navLink.path} onClick={handleCloseMenu}>{navLink.name}</NavLink>
                 </li>
               ))}
             </div>
             <Button
+              className={'nav-links'}
               primary
               label={{ FR: "rendez-vous.", AR: "احجز موعدا" }}
               path={"#rendez-vous"}
@@ -74,7 +75,7 @@ export const NavBar = () => {
             id="language"
             value={selectedLanguage}
             onChange={handleLanguageChange}
-            className="bg-light-cream font-light"
+            className="bg-light-cream font-light nav-links"
           >
             <option value="AR">AR</option>
             <option value="FR">FR</option>

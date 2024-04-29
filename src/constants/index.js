@@ -211,7 +211,7 @@ export const FAQ = {
 };
 
 // Services page :
-export const ServiceBanner = {
+export const ServiceBannerContent = {
   FR: {
     title: "Découvrez le sourire radieux avec One Smile",
     Description:
@@ -224,7 +224,7 @@ export const ServiceBanner = {
   },
 };
 
-export const ServiceArticle = {
+export const ServiceArticleContent = {
   FR: {
     title: "Service de Blanchiment Dentaire",
     description:
