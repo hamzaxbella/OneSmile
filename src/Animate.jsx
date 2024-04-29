@@ -40,7 +40,7 @@ export const Animate = () => {
         stagger: 0.2,
       });
       gsap.from("#hero-img", {
-        opacity: 0,
+        height: 10,
         duration: 2,
         ease: "expo.inOut",
       });
