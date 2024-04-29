@@ -8,6 +8,7 @@ import {serviceBanner } from "../assets/images"
 import { Context } from "../App"
 import { useContext } from "react"
 import { ServiceBannerContent } from "../constants"
+import { ServicesSection } from "../sections/ServicesSection"
 
 export const Services = () => {
 
@@ -33,7 +34,7 @@ export const Services = () => {
       </section>
       
       <section>
-        {/* <ServicesSection /> */}
+        < ServicesSection />
       </section>
       
       <section>
