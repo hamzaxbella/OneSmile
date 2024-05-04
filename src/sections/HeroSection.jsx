@@ -20,7 +20,7 @@ export const HeroSection = () => {
           <p dir={textdir}  className={`${font} text-text-gray hero-description font-light
            text-sm`}>{content.Description}</p>
           <div className={`  w-full flex ${selectedLanguage === 'AR' && ' flex-row-reverse '}  gap-6 `} >
-          < Button className = 'hero-btns' primary label={{FR : 'Contactez' , AR : 'تواصل معنا'}} path={'/contact'} />
+          < Button className = 'hero-btns' primary label={{FR : 'Contactez' , AR : 'تواصل معنا'}} path={'/contact#form'} />
           < Button className = 'hero-btns' label={{FR : 'Prendre rendez-vous' , AR : 'احجز موعدا'}} path={'/contact#appointement'} />
           </div>
         </div>

@@ -9,7 +9,6 @@ export const ServiceDescription = () => {
       ? ServiceArticleContent.FR
       : ServiceArticleContent.AR;
   const textdir = selectedLanguage === "AR" ? "rtl" : "ltr"; // Set textdir to 'rtl' if selectedLanguage is 'AR'
-  const font = selectedLanguage === "FR" ? "font-Inter" : "font-Cairo";
   const Titlefont = selectedLanguage === "FR" ? "font-Inria" : "font-Cairo";
 
   return (
@@ -37,7 +36,7 @@ export const ServiceDescription = () => {
 
       <div className="padding-y">
         <h2 className="text-3xl mb-2  text-browney-cream" dir={textdir}>{selectedLanguage === 'FR' ?  'Procédure :' : 'الخطوات : '}</h2>
-        <p className="text-xl  opacity-70 leading-10">{content.process}</p>
+        <p dir={textdir} className="text-xl  opacity-70 leading-10">{content.process}</p>
       </div>
 
       <div className="padding-y">

@@ -63,10 +63,9 @@ export const NavBar = () => {
             </div>
             <Button
               className={'nav-links'}
-              primary
               label={{ FR: "rendez-vous.", AR: "احجز موعدا" }}
               path={"#rendez-vous"}
-              nav = {navOpen}
+              nav
             />
           </ul>
 

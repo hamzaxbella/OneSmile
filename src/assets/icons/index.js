@@ -9,6 +9,7 @@ import threads from "./threads.svg"
 import tiktok from "./tiktok.svg"
 import burger_menu from "./burger_menu.svg"
 import accordion from './accordion.svg'
+import star from './star.svg'
 
 export {
     arrow_left,
@@ -21,5 +22,6 @@ export {
     threads,
     tiktok,
     burger_menu,
-    accordion
+    accordion,
+    star
 }

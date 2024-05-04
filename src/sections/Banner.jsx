@@ -9,9 +9,9 @@ export const Banner = ({ img, Title, description }) => {
   const Titlefont = selectedLanguage === "FR" ? "font-Inria" : "font-Cairo";
 
   return (
-    <section className={"h-[85vh] relative "}>
+    <section className={"h-[85vh] relative"}>
       <img src={img} alt="section banner image" style={{objectPosition : '40% 0%'}} className={"z-0 w-full h-full object-cover"} />
-      <div className="absolute md:right-[15%] text-center md:text-right left-1/2 md:translate-x-0 -translate-x-1/2 flex flex-col gap-8 top-[50%] -translate-y-1/2 z-10">
+      <div className=" absolute md:right-[15%] text-center md:text-right left-1/2 md:translate-x-0 -translate-x-1/2 flex flex-col gap-8 top-[50%] -translate-y-1/2 z-10">
         <h1 dir={textdir} className={`${Titlefont} text-white-smoke font-light text-4xl w-[18ch]`}>{Title}</h1>
         <p  dir={textdir} className={`${font} w-[50ch] text-sm  text-white-smoke font-thin`}>{description}</p>
         <div>

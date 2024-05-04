@@ -1,6 +1,4 @@
 import {
-  arrow_left,
-  arrow_right,
   email,
   facebook,
   instagram,
@@ -9,7 +7,8 @@ import {
   threads,
   tiktok,
   burger_menu,
-  accordion
+  accordion,
+  star
 } from '../assets/icons'
 
 import {
@@ -259,7 +258,7 @@ export const ServiceArticleContent = {
 
 export const BeforAfterImages = [ex1, ex2, ex3, ex4];
 
-export const ContactBanner = {
+export const ContactBannerContent = {
   FR: {
     title: "Prenez Contact pour un Sourire Radieux.",
     Description:
@@ -278,17 +277,20 @@ export const contactInfo = {
       title: "Email",
       lable: "si vous avez des questions, n'hisitez a nous contactez.",
       link: "osmile.be@gmail.com",
+      img : email
     },
     {
       title: "Téléphone",
       lable: "Appelez-nous et nous vous assistera rapidement",
       link: "osmile.be@gmail.com",
+      img : phone
     },
     {
       title: "Email",
       lable:
         "Venez a notre cabinet et laissez-nous vous aider a obtenir beau sourire ",
-      link: "+212 6 58 54 72 64",
+      link: "Agadir, one smile",
+      img : location
     },
   ],
   AR: [
@@ -296,16 +298,36 @@ export const contactInfo = {
       title: "البريد الإلكتروني",
       lable: "لا تتردد بالتواصل معنا إدا كان لديك اي سؤال.",
       link: "osmile.be@gmail.com",
+      img : email
     },
     {
       title: "الهاتف",
       lable: "اتصل بنا وسنساعدك في الحين",
       link: "osmile.be@gmail.com",
+      img : phone
     },
     {
       title: "Email",
       lable: "زرنا في عيادتنا ودعنا نصمم ابتسامتك",
       link: "+212 6 58 54 72 64",
+      img : location
     },
   ],
 };
+
+
+export const TestimonialsContent = [
+  {client : 'DJINA YUSTE' , testimoial : `Première fois que je fait un blanchiment j’avais des aprioris ayant les dents et gencive très sensibles je m’attendez à avoir des douleurs et aucune vraiment même pas de sensibilité ressenti après rien ! Franchement foncer à l’aise et la dame est très gentille et a l’écoute j’ai gagner 6 teintes 😍 je recommande ! Merci ! …
+  `},
+  {client : 'Asma El bakkali' , testimoial : `On peut dire une chose c’est que lorsqu’on va chez One smile on est toujours accueillies avec un magnifique sourire et un accueil des plus chaleureux. On se sent bien et on est sûr de passez un bon moment de détente🤩 
+  `},
+  {client : 'Yousra Elka' , testimoial : `J’ai eu le plaisir de découvrir ce lieu lors de mon séjour au Maroc. Personnel très professionnel et agréable. Résultat immédiat sur les dents et surtout une hygiène irréprochable du lieu. Je vous souhaite beaucoup de succès
+  `},
+  {client : 'Farrah89 Ediiil89' , testimoial : `Je suis super satisfaite de mon blanchiment j'ai gagné 6 teintes en une séance ! Le personnel est agréable et pro et surtout je n'ai ressenti aucune douleur après ma séance... Je recommande +++
+  `},
+  {client : 'Brahim Kh' , testimoial : `Magnifique.  Merci beaucoup pour cette séance de blanchiment.    Au top.  Que ça soit l'hygiène ou votre professionnalisme, je recommande à 100%.
+
+  Merci encore.  Je suis très très satisfait.
+  
+  `},
+]
