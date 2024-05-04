@@ -46,21 +46,25 @@ export const Animate = () => {
     },
     { scope: "#hero-section" }
   );
-
   // Animating section titles.
   useGSAP(() => {
-    gsap.from(".section-title", {
-      scrollTrigger: {
-        toggleActions: "play play play play",
-        start: "top 100%",
-        end: "bottom 60%",
-        scrub: 1,
-      },
-      opacity: 0,
-      y: 100,
-      duration: 1,
-    });
-  });
+    const sectionTitles = document.querySelectorAll(".section-title");
+
+    sectionTitles.forEach((title, index) => {
+      gsap.from(title, {
+        scrollTrigger: {
+          trigger: title,
+          toggleActions: "play play play play", // Prevents the animation from being reversed
+          start: "top 100%",
+          end: "botton 85%",
+          scrub: 2,
+        },
+        opacity: 0,
+        y: 100,
+        duration: 1,
+      });
+    }); // Closing parentheses for forEach loop
+  }); // Closing parentheses for useGSAP hook
 
   // about section.
   useGSAP(
