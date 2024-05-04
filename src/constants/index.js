@@ -478,5 +478,5 @@ export const siteMapContent = [
   {link : 'contact' , path : '/contact'},
   {link : 'site plan' , path : '/sitemap'},
   {link : 'polytique de confédentialité' , path : '/privacypolicy'},
-  {link : "conditions d'utilisation " , path : 'terms'},
+  {link : "conditions d'utilisation " , path : '/terms'},
 ]
