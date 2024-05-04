@@ -8,8 +8,8 @@ import {
   tiktok,
   burger_menu,
   accordion,
-  star
-} from '../assets/icons'
+  star,
+} from "../assets/icons";
 
 import {
   service1,
@@ -23,11 +23,27 @@ import {
 } from "../assets/images";
 
 export const socialLinks = [
-  {icon : facebook , path : 'https://www.facebook.com/onesmilemaroc' , alt : 'one smile facebook'},
-  {icon : instagram , path : 'https://www.instagram.com/onesmile.maroc' , alt : 'one smile instagram'},
-  {icon : threads , path : 'https://www.threads.net/@onesmile.maroc' , alt : 'one smile threads'},
-  {icon : tiktok , path : 'https://www.tiktok.com/@onesmilemaroc' , alt : 'one smile tiktok'},
-]
+  {
+    icon: facebook,
+    path: "https://www.facebook.com/onesmilemaroc",
+    alt: "one smile facebook",
+  },
+  {
+    icon: instagram,
+    path: "https://www.instagram.com/onesmile.maroc",
+    alt: "one smile instagram",
+  },
+  {
+    icon: threads,
+    path: "https://www.threads.net/@onesmile.maroc",
+    alt: "one smile threads",
+  },
+  {
+    icon: tiktok,
+    path: "https://www.tiktok.com/@onesmilemaroc",
+    alt: "one smile tiktok",
+  },
+];
 
 export const PrimaryLinks = {
   FR: [
@@ -89,78 +105,70 @@ export const AboutContent = {
   ],
 };
 
-
 export const ServicesContent = [
   {
-    FR: 
-      {
-        Title: "Blanchiment-éclairciement dentaire",
-        Description:
-          "Obtenez un sourire plus éclatant et rayonnant grâce à notre traitement professionnel de blanchiment des dents. En utilisant une technologie de blanchiment avancée, nous éliminons efficacement les taches et la décoloration, vous laissant avec un sourire éblouissant que vous aimerez montrer.",
-        img: service1,
-      },
-    
-    AR:
-      {
-        Title: "تبييض وتلميع الاسنان",
-        Description:
-          "احصل على ابتسامة أكثر إشراقًا وجمالا مع علاج تبييض الأسنان الاحترافي لدينا. باستخدام تقنية تبييض متقدمة، نقوم بإزالة البقع وتغير اللون بشكل فعال، مما يترك لك ابتسامة مبهرة ستحب التباهي بها.",
-        img: service1,
-      },
+    FR: {
+      Title: "Blanchiment-éclairciement dentaire",
+      Description:
+        "Obtenez un sourire plus éclatant et rayonnant grâce à notre traitement professionnel de blanchiment des dents. En utilisant une technologie de blanchiment avancée, nous éliminons efficacement les taches et la décoloration, vous laissant avec un sourire éblouissant que vous aimerez montrer.",
+      img: service1,
+    },
+
+    AR: {
+      Title: "تبييض وتلميع الاسنان",
+      Description:
+        "احصل على ابتسامة أكثر إشراقًا وجمالا مع علاج تبييض الأسنان الاحترافي لدينا. باستخدام تقنية تبييض متقدمة، نقوم بإزالة البقع وتغير اللون بشكل فعال، مما يترك لك ابتسامة مبهرة ستحب التباهي بها.",
+      img: service1,
+    },
   },
   {
-    FR:
-      {
-        Title: "Détartrage et polissage",
-        Description:
-          "Maintenez une santé bucco-dentaire optimale avec notre service de dépistage du tartre. Nos professionnels dentaires qualifiés utilisent des techniques douces mais efficaces pour éliminer en toute sécurité l'accumulation de tartre, aidant à prévenir les maladies des gencives et à promouvoir le bien-être dentaire global.",
-        img: service2,
-      },
-    AR:
-      {
-        Title: "إزالة الجير",
-        Description:
-          "حافظ على صحة الفم المثالية من خلال خدمة إزالة الجير لدينا. يستخدم أطباء الأسنان المدربون لدينا تقنيات لطيفة وفعالة لإزالة تراكم الجير بأمان، مما يساعد على الوقاية من أمراض اللثة وتعزيز صحة الأسنان بشكل عام.",
-        img: service2,
-      },
+    FR: {
+      Title: "Détartrage et polissage",
+      Description:
+        "Maintenez une santé bucco-dentaire optimale avec notre service de dépistage du tartre. Nos professionnels dentaires qualifiés utilisent des techniques douces mais efficaces pour éliminer en toute sécurité l'accumulation de tartre, aidant à prévenir les maladies des gencives et à promouvoir le bien-être dentaire global.",
+      img: service2,
+    },
+    AR: {
+      Title: "إزالة الجير",
+      Description:
+        "حافظ على صحة الفم المثالية من خلال خدمة إزالة الجير لدينا. يستخدم أطباء الأسنان المدربون لدينا تقنيات لطيفة وفعالة لإزالة تراكم الجير بأمان، مما يساعد على الوقاية من أمراض اللثة وتعزيز صحة الأسنان بشكل عام.",
+      img: service2,
+    },
   },
   {
-    FR:
-      {
-        Title: "Snap-On Smile",
-        Description:
-          "Transformez instantanément votre sourire avec notre service Snap-On Smiley. Cette solution innovante vous permet d'obtenir un sourire impeccable sans recourir à des interventions invasives. Il vous suffit de clipser l'appareil personnalisé sur vos dents naturelles pour dissimuler les imperfections et améliorer l'apparence de votre sourire.",
-        img: service3,
-      },
-    AR:
-      {
-        Title: "ابتسامة سريعة",
-        Description:
-          "قم بتحويل ابتسامتك على الفور من خلال خدمة سناب اون سمايل الخاصة بنا. يتيح لك هذا الحل المبتكر تحقيق ابتسامة خالية من العيوب دون اللجوء إلى إجراءات جراحية. ما عليك سوى تثبيت الطقم المخصص على أسنانك الطبيعية لإخفاء العيوب وتحسين مظهر ابتسامتك.",
-        img: service3,
-      },
+    FR: {
+      Title: "Snap-On Smile",
+      Description:
+        "Transformez instantanément votre sourire avec notre service Snap-On Smiley. Cette solution innovante vous permet d'obtenir un sourire impeccable sans recourir à des interventions invasives. Il vous suffit de clipser l'appareil personnalisé sur vos dents naturelles pour dissimuler les imperfections et améliorer l'apparence de votre sourire.",
+      img: service3,
+    },
+    AR: {
+      Title: "ابتسامة سريعة",
+      Description:
+        "قم بتحويل ابتسامتك على الفور من خلال خدمة سناب اون سمايل الخاصة بنا. يتيح لك هذا الحل المبتكر تحقيق ابتسامة خالية من العيوب دون اللجوء إلى إجراءات جراحية. ما عليك سوى تثبيت الطقم المخصص على أسنانك الطبيعية لإخفاء العيوب وتحسين مظهر ابتسامتك.",
+      img: service3,
+    },
   },
   {
-    FR:
-      {
-        Title: "Bijoux Dentaires & grillz",
-        Description:
-          "Ajoutez une touche d'éclat à votre sourire avec nos options de bijoux dentaires. Choisissez parmi une variété de designs élégants pour orner vos dents et exprimer votre personnalité unique. Nos bijoux dentaires sont sûrs, non invasifs et facilement amovibles, vous permettant de changer de look à votre guise.",
-        img: service4,
-      },
-    AR:
-      { Title: "مجوهرات الأسنان " ,
-        Description:
-          "أضف لمسة من التألق إلى ابتسامتك مع خيارات مجوهرات الأسنان لدينا. اختر من بين مجموعة متنوعة من التصاميم الأنيقة لتزيين أسنانك والتعبير عن شخصيتك الفريدة. مجوهرات الأسنان لدينا آمنة وغير جراحية وقابلة للإزالة بسهولة، مما يسمح لك بتغيير مظهرك كما يحلو لك.",
-        img: service4,
-      },
+    FR: {
+      Title: "Bijoux Dentaires & grillz",
+      Description:
+        "Ajoutez une touche d'éclat à votre sourire avec nos options de bijoux dentaires. Choisissez parmi une variété de designs élégants pour orner vos dents et exprimer votre personnalité unique. Nos bijoux dentaires sont sûrs, non invasifs et facilement amovibles, vous permettant de changer de look à votre guise.",
+      img: service4,
+    },
+    AR: {
+      Title: "مجوهرات الأسنان ",
+      Description:
+        "أضف لمسة من التألق إلى ابتسامتك مع خيارات مجوهرات الأسنان لدينا. اختر من بين مجموعة متنوعة من التصاميم الأنيقة لتزيين أسنانك والتعبير عن شخصيتك الفريدة. مجوهرات الأسنان لدينا آمنة وغير جراحية وقابلة للإزالة بسهولة، مما يسمح لك بتغيير مظهرك كما يحلو لك.",
+      img: service4,
+    },
   },
 ];
 
 export const CallToActionTitle = {
-  FR : 'Prendre un rendez-vous',
-  AR : 'أحجز موعدا'
-}
+  FR: "Prendre un rendez-vous",
+  AR: "أحجز موعدا",
+};
 
 export const FAQ = {
   FR: [
@@ -277,20 +285,20 @@ export const contactInfo = {
       title: "Email",
       lable: "si vous avez des questions, n'hisitez a nous contactez.",
       link: "osmile.be@gmail.com",
-      img : email
+      img: email,
     },
     {
       title: "Téléphone",
       lable: "Appelez-nous et nous vous assistera rapidement",
       link: "osmile.be@gmail.com",
-      img : phone
+      img: phone,
     },
     {
       title: "Email",
       lable:
         "Venez a notre cabinet et laissez-nous vous aider a obtenir beau sourire ",
       link: "Agadir, one smile",
-      img : location
+      img: location,
     },
   ],
   AR: [
@@ -298,36 +306,177 @@ export const contactInfo = {
       title: "البريد الإلكتروني",
       lable: "لا تتردد بالتواصل معنا إدا كان لديك اي سؤال.",
       link: "osmile.be@gmail.com",
-      img : email
+      img: email,
     },
     {
       title: "الهاتف",
       lable: "اتصل بنا وسنساعدك في الحين",
       link: "osmile.be@gmail.com",
-      img : phone
+      img: phone,
     },
     {
       title: "Email",
       lable: "زرنا في عيادتنا ودعنا نصمم ابتسامتك",
       link: "+212 6 58 54 72 64",
-      img : location
+      img: location,
     },
   ],
 };
 
-
 export const TestimonialsContent = [
-  {client : 'DJINA YUSTE' , testimoial : `Première fois que je fait un blanchiment j’avais des aprioris ayant les dents et gencive très sensibles je m’attendez à avoir des douleurs et aucune vraiment même pas de sensibilité ressenti après rien ! Franchement foncer à l’aise et la dame est très gentille et a l’écoute j’ai gagner 6 teintes 😍 je recommande ! Merci ! …
-  `},
-  {client : 'Asma El bakkali' , testimoial : `On peut dire une chose c’est que lorsqu’on va chez One smile on est toujours accueillies avec un magnifique sourire et un accueil des plus chaleureux. On se sent bien et on est sûr de passez un bon moment de détente🤩 
-  `},
-  {client : 'Yousra Elka' , testimoial : `J’ai eu le plaisir de découvrir ce lieu lors de mon séjour au Maroc. Personnel très professionnel et agréable. Résultat immédiat sur les dents et surtout une hygiène irréprochable du lieu. Je vous souhaite beaucoup de succès
-  `},
-  {client : 'Farrah89 Ediiil89' , testimoial : `Je suis super satisfaite de mon blanchiment j'ai gagné 6 teintes en une séance ! Le personnel est agréable et pro et surtout je n'ai ressenti aucune douleur après ma séance... Je recommande +++
-  `},
-  {client : 'Brahim Kh' , testimoial : `Magnifique.  Merci beaucoup pour cette séance de blanchiment.    Au top.  Que ça soit l'hygiène ou votre professionnalisme, je recommande à 100%.
+  {
+    client: "DJINA YUSTE",
+    testimoial: `Première fois que je fait un blanchiment j’avais des aprioris ayant les dents et gencive très sensibles je m’attendez à avoir des douleurs et aucune vraiment même pas de sensibilité ressenti après rien ! Franchement foncer à l’aise et la dame est très gentille et a l’écoute j’ai gagner 6 teintes 😍 je recommande ! Merci ! …
+  `,
+  },
+  {
+    client: "Asma El bakkali",
+    testimoial: `On peut dire une chose c’est que lorsqu’on va chez One smile on est toujours accueillies avec un magnifique sourire et un accueil des plus chaleureux. On se sent bien et on est sûr de passez un bon moment de détente🤩 
+  `,
+  },
+  {
+    client: "Yousra Elka",
+    testimoial: `J’ai eu le plaisir de découvrir ce lieu lors de mon séjour au Maroc. Personnel très professionnel et agréable. Résultat immédiat sur les dents et surtout une hygiène irréprochable du lieu. Je vous souhaite beaucoup de succès
+  `,
+  },
+  {
+    client: "Farrah89 Ediiil89",
+    testimoial: `Je suis super satisfaite de mon blanchiment j'ai gagné 6 teintes en une séance ! Le personnel est agréable et pro et surtout je n'ai ressenti aucune douleur après ma séance... Je recommande +++
+  `,
+  },
+  {
+    client: "Brahim Kh",
+    testimoial: `Magnifique.  Merci beaucoup pour cette séance de blanchiment.    Au top.  Que ça soit l'hygiène ou votre professionnalisme, je recommande à 100%.
 
   Merci encore.  Je suis très très satisfait.
   
-  `},
+  `,
+  },
+];
+
+export const PrivacyPolicyContent = {
+  FR: [
+    {
+      title: "Politique de confidentialité",
+      description:
+        "La confidentialité de nos visiteurs est extrêmement importante pour nous. Cette politique de confidentialité documente les types d'informations personnelles reçues et collectées par One Smile et comment elles sont utilisées.",
+    },
+
+    {
+      title: "Collecte d'informations",
+      description:
+        "One Smile peut collecter des informations personnelles lorsque vous visitez notre site Web, notamment votre nom, votre adresse e-mail et votre numéro de téléphone. Ces informations sont collectées uniquement lorsque vous nous les fournissez volontairement, par exemple, lorsque vous remplissez un formulaire de contact sur notre site Web.",
+    },
+    
+    {
+      title: "Utilisation des informations",
+      description:
+        "Les informations personnelles que nous collectons sont utilisées pour répondre à vos demandes spécifiques, pour traiter vos rendez-vous et pour vous fournir des informations sur nos services. Nous ne partagerons pas vos informations personnelles avec des tiers sans votre consentement préalable.",
+    },
+    
+    {
+      title: "Cookies et suivi",
+      description:
+        "One Smile peut utiliser des cookies pour améliorer votre expérience utilisateur sur notre site Web. Les cookies sont de petits fichiers texte placés sur votre appareil pour collecter des informations standard sur le journal Internet et le comportement des visiteurs. Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour indiquer quand un cookie est envoyé.",
+    },
+    
+    {
+      title: "Modifications de la politique de confidentialité",
+      description:
+        "One Smile se réserve le droit de mettre à jour ou de modifier cette politique de confidentialité à tout moment. Les modifications seront effectives dès leur publication sur cette page.",
+    },
+  ],
+  AR: [
+    {
+      title: "سياسة الخصوصية",
+      description:
+        "تعتبر خصوصية زوارنا أمرًا مهمًا للغاية بالنسبة لنا. توثيق هذه السياسة الخصوصية يوضح أنواع المعلومات الشخصية التي نستلمها ونجمعها في One Smile وكيفية استخدامها.",
+    },
+
+    {
+      title: "جمع المعلومات",
+      description:
+        "قد يقوم One Smile بجمع المعلومات الشخصية عند زيارتك لموقعنا على الويب، بما في ذلك اسمك وعنوان بريدك الإلكتروني ورقم هاتفك. يتم جمع هذه المعلومات فقط عندما تقدمها لنا بإرادتك، على سبيل المثال عندما تملأ استمارة اتصال على موقعنا على الويب.",
+    },
+    
+    {
+      title: "استخدام المعلومات",
+      description:
+        "تُستخدم المعلومات الشخصية التي نجمعها للرد على طلباتك المحددة ومعالجة مواعيدك وتقديم المعلومات حول خدماتنا. لن نشارك معلوماتك الشخصية مع أطراف ثالثة دون موافقتك المسبقة.",
+    },
+    
+    {
+      title: "الكوكيز والتتبع",
+      description:
+        "قد يستخدم One Smile ملفات تعريف الارتباط لتحسين تجربتك كمستخدم على موقعنا على الويب. تعتبر ملفات تعريف الارتباط ملفات نصية صغيرة توضع على جهازك لجمع معلومات قياسية عن سجل الإنترنت وسلوك الزوار. يمكنك تكوين متصفحك لرفض جميع ملفات تعريف الارتباط أو لإشعارك عند إرسال ملف تعريف ارتباط.",
+    },
+    
+    {
+      title: "تعديلات على سياسة الخصوصية",
+      description:
+        "يحتفظ One Smile بالحق في تحديث أو تعديل هذه السياسة الخصوصية في أي وقت. ستكون التعديلات فعالة فور نشرها على هذه الصفحة.",
+    },
+  ],
+};
+
+export const  TermsOfUseContent = {
+  FR: [
+    {
+      title: "Conditions d'utilisation",
+      description:
+        "Veuillez lire attentivement ces conditions d'utilisation avant d'utiliser notre site Web. En accédant ou en utilisant le site Web de One Smile, vous acceptez d'être lié par ces conditions. Si vous n'acceptez pas toutes les conditions énoncées sur cette page, veuillez ne pas accéder à ce site Web.",
+    },
+
+    {
+      title: "Utilisation du Site Web",
+      description:
+        "One Smile vous accorde une licence limitée pour accéder et utiliser ce site Web uniquement à des fins personnelles et non commerciales. Vous n'êtes pas autorisé à modifier ou à redistribuer son contenu. Toute utilisation non autorisée de ce site peut entraîner une violation des lois sur les droits d'auteur, les marques commerciales et d'autres réglementations.",
+    },
+    
+    {
+      title: "Contenu",
+      description:
+        "Le contenu de ce site Web est fourni tel quel, sans garantie d'aucune sorte, explicite ou implicite. One Smile ne garantit pas l'exactitude, la pertinence ou l'exhaustivité de ce contenu. L'utilisation de ce site Web est à vos propres risques.",
+    },
+    
+    {
+      title: "Modifications",
+      description:
+        "One Smile se réserve le droit de modifier ces conditions d'utilisation à tout moment. Les modifications seront effectives dès leur publication sur cette page. Nous vous encourageons à consulter régulièrement cette page pour rester informé des modifications éventuelles.",
+    },
+  ],
+  AR: [
+    {
+      title: "شروط الاستخدام",
+      description:
+        "يرجى قراءة شروط الاستخدام هذه بعناية قبل استخدام موقعنا الإلكتروني. من خلال الوصول إلى موقع One Smile أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على جميع الشروط المذكورة في هذه الصفحة، يرجى عدم الوصول إلى هذا الموقع الإلكتروني.",
+    },
+
+    {
+      title: "استخدام الموقع الإلكتروني",
+      description:
+        "تمنحك One Smile ترخيصًا محدودًا للوصول إلى واستخدام هذا الموقع الإلكتروني فقط لأغراض شخصية وغير تجارية. لا يجوز لك تعديل أو إعادة توزيع محتواه. قد تؤدي أي استخدام غير مصرح به لهذا الموقع إلى انتهاك لقوانين حقوق النشر والعلامات التجارية وغيرها من التنظيمات.",
+    },
+    
+    {
+      title: "المحتوى",
+      description:
+        "يتم توفير محتوى هذا الموقع الإلكتروني كما هو، دون أي ضمانات صريحة أو ضمنية. لا يضمن One Smile دقة أو ملاءمة أو اكتمال هذا المحتوى. استخدام هذا الموقع الإلكتروني على مسؤوليتك الخاصة.",
+    },
+    
+    {
+      title: "التعديلات",
+      description:
+        "يحتفظ One Smile بالحق في تعديل شروط الاستخدام هذه في أي وقت. ستكون التعديلات فعالة فور نشرها على هذه الصفحة. نشجعك على زيارة هذه الصفحة بانتظام لمتابعة التحديثات.",
+    },
+  ],
+};
+
+export const siteMapContent = [
+  {link : 'Accuille' , path : '/'},
+  {link : 'services' , path : '/services'},
+  {link : 'contact' , path : '/contact'},
+  {link : 'site plan' , path : '/sitemap'},
+  {link : 'polytique de confédentialité' , path : '/privacypolicy'},
+  {link : "conditions d'utilisation " , path : 'terms'},
 ]

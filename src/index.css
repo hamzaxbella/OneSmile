@@ -31,6 +31,23 @@ body {
   .section-spacing {
     margin : 10rem 0;
   }
+
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
 }
 
 @layer utilities {

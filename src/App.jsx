@@ -34,9 +34,6 @@ function App() {
 
 
   const [selectedLanguage, setSelectedLanguage] = useState("FR");
-  const textdir = selectedLanguage === "AR" ? "rtl" : "ltr";
-  const Titlefont = selectedLanguage === "FR" ? "font-Inria" : "font-Cairo";
-  const font = selectedLanguage === "FR" ? "font-Inter" : "font-Cairo";
 
 
 
