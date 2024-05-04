@@ -51,9 +51,14 @@ export const Animate = () => {
   //   Animating section titles.
 
   const sectionTitlesRef = useRef([]);
+  const servicesImage = useRef([]);
+  const servicesText = useRef([]);
 
   useEffect(() => {
     sectionTitlesRef.current = document.querySelectorAll(".section-title");
+    servicesImage.current = document.querySelectorAll(".service-img");
+    servicesText.current = document.querySelectorAll(".service-text");
+
   }, []);
 
   useGSAP(() => {
@@ -108,13 +113,6 @@ export const Animate = () => {
 
   //   Services section Animations
 
-  const servicesImage = useRef([]);
-  const servicesText = useRef([]);
-
-  useEffect(() => {
-    servicesImage.current = document.querySelectorAll(".service-img");
-    servicesText.current = document.querySelectorAll(".service-text");
-  }, []);
 
   useGSAP(
     () => {
