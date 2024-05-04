@@ -2,7 +2,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 export const Animate = () => {
@@ -48,37 +47,22 @@ export const Animate = () => {
     { scope: "#hero-section" }
   );
 
-  //   Animating section titles.
-
-  const sectionTitlesRef = useRef([]);
-  const servicesImage = useRef([]);
-  const servicesText = useRef([]);
-
-  useEffect(() => {
-    sectionTitlesRef.current = document.querySelectorAll(".section-title");
-    servicesImage.current = document.querySelectorAll(".service-img");
-    servicesText.current = document.querySelectorAll(".service-text");
-
-  }, []);
-
+  // Animating section titles.
   useGSAP(() => {
-    sectionTitlesRef.current.forEach((title) => {
-      gsap.from(title, {
-        scrollTrigger: {
-          trigger: title,
-          toggleActions: "play play play play", // Prevents the animation from being reversed
-          start: "top 100%",
-          end: "botton 60%",
-          scrub: 1,
-        },
-        opacity: 0,
-        y: 100,
-        duration: 1,
-      });
+    gsap.from(".section-title", {
+      scrollTrigger: {
+        toggleActions: "play play play play",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: 1,
+      },
+      opacity: 0,
+      y: 100,
+      duration: 1,
     });
-  }, []);
+  });
 
-  //   about section.
+  // about section.
   useGSAP(
     () => {
       gsap.from("#about-img", {
@@ -111,45 +95,41 @@ export const Animate = () => {
     { scope: "#about-section" }
   );
 
-  //   Services section Animations
+  // Services section Animations
+  useGSAP(() => {
+    const servicesImage = document.querySelectorAll(".service-img");
+    const servicesText = document.querySelectorAll(".service-text");
 
-
-  useGSAP(
-    () => {
-      servicesImage.current.forEach((image, index) => {
-        gsap.from(image, {
-          scrollTrigger: {
-            trigger: image,
-            toggleActions: "play play play play", // Prevents the animation from being reversed
-            start: "top 80%",
-            end: "botton 70%",
-            scrub: 2,
-          },
-          opacity: 0,
-          x: index % 2 == 0 ? 100 : -100,
-          duration: 1,
-        });
+    servicesImage.forEach((image, index) => {
+      gsap.from(image, {
+        scrollTrigger: {
+          trigger: image,
+          toggleActions: "play play play play", // Prevents the animation from being reversed
+          start: "top 80%",
+          end: "botton 70%",
+          scrub: 2,
+        },
+        opacity: 0,
+        x: index % 2 === 0 ? 100 : -100,
+        duration: 1,
       });
+    });
 
-      servicesText.current.forEach((text, index) => {
-        gsap.from(text, {
-          scrollTrigger: {
-            trigger: text,
-            toggleActions: "play play play play", // Prevents the animation from being reversed
-            start: "top 80%",
-            end: "botton 70%",
-            scrub: 2,
-          },
-          opacity: 0,
-          x: index % 2 == 0 ? -150 : 150,
-          duration: 1,
-        });
+    servicesText.forEach((text, index) => {
+      gsap.from(text, {
+        scrollTrigger: {
+          trigger: text,
+          toggleActions: "play play play play", // Prevents the animation from being reversed
+          start: "top 80%",
+          end: "botton 70%",
+          scrub: 2,
+        },
+        opacity: 0,
+        x: index % 2 === 0 ? -150 : 150,
+        duration: 1,
       });
-      console.log("its working");
-    },
-
-    { scope: "#services-section" }
-  );
+    });
+  }, []);
 
   useGSAP(() => {
     gsap.from(".accordion", {
