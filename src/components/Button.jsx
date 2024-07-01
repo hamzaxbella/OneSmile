@@ -4,7 +4,7 @@ import { Context } from '../App';
 
 export const Button = ({ className, primary, label, path, nav, forBanner }) => {
   const openCalendlyPopup = () => {
-    window.Calendly && window.Calendly.showPopupWidget('https://calendly.com/deveups/tester');
+    window.Calendly && window.Calendly.showPopupWidget('https://calendly.com/zyllux-agency/rendez-vous-dentaire');
   };
 
   const [selectedLanguage, setSelectedLanguage] = useContext(Context);

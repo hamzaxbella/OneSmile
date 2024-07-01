@@ -47,7 +47,7 @@ export const socialLinks = [
 
 export const PrimaryLinks = {
   FR: [
-    { name: "Accuille", path: "/" },
+    { name: "Accueil", path: "/" },
     { name: "Services", path: "/services" },
     { name: "Contactez", path: "/contact" },
   ],
@@ -60,7 +60,7 @@ export const PrimaryLinks = {
 
 export const secondaryLinks = {
   FR: [
-    { name: "Politiaue de confidentality", path: "/privacypolicy" },
+    { name: "Politique de confidentialité", path: "/privacypolicy" },
     { name: "conditions d'utilisation", path: "/terms" },
     { name: "Plan de site.", path: "/sitemap" },
   ],
@@ -182,11 +182,11 @@ export const FAQ = {
     },
     {
       Q: "Quelles sont les options de paiement disponibles pour les traitements dentaires ?",
-      A: "Nous proposons plusieurs options de paiement flexibles pour nos traitements dentaires, y compris les paiements en espèces, par carte de crédit ou de débit",
+      A: "les paiements uniquement en espèces pour nos traitements dentaires. ",
     },
     {
       Q: "Combien de temps dure un traitement de blanchiment des dents ?",
-      A: "La durée d'un traitement de blanchiment-éclaircissement dentaire peut varier en fonction de plusieurs facteurs, notamment le type de traitement utilisé et la sévérité des taches dentaires. En général, un traitement de blanchiment-éclaircissement dentaire peut prendre entre 30min jusqu'à 2 heures en une seule séance en cabinet.",
+      A: "La durée d'un traitement de blanchiment-éclaircissement dentaire peut varier en fonction de plusieurs facteurs, notamment le type de traitement utilisé et la sévérité des taches dentaires. En général, un traitement de blanchiment-éclaircissement dentaire peut prendre entre 30min jusqu'à 1 heures en une seule séance en cabinet.",
     },
     {
       Q: "Est-ce que le blanchiment des dents cause des dommages aux dents ?",
@@ -290,7 +290,7 @@ export const contactInfo = {
     {
       title: "Téléphone",
       lable: "Appelez-nous et nous vous assistera rapidement",
-      link: "osmile.be@gmail.com",
+      link: "+212658547264",
       img: phone,
     },
     {
@@ -471,6 +471,59 @@ export const  TermsOfUseContent = {
     },
   ],
 };
+
+export const  tarifs = {
+  FR : [
+    {Category : 'Teeth whitening' , children : [
+      {title : 'Fast white' , price : '500.DH' , session : 'Une séance' , duration : '30min'},
+      {title : 'Glamourous white' , price : '700.DH' , session : 'Deux séance' , duration : '60min'},
+      {title : 'Extra white' , price : '1200.DH' , session : 'Trois séance' , duration : '120min'},
+    ] , note : 'Séance duo prix par personne*'},
+    {Category : 'GEMS' , children : [
+      {title : 'Swarovski' , price : '250.DH' },
+      {title : 'Gold' , price : '300.DH' },
+      {title : 'Silver' , price : '300.DH' },
+      {title : 'Funny mouth*' , price : '500.DH' },
+    ] , note : 'Funny mouth* a partir de 3 gems swarovski*'},
+    {Category : 'GRILLS' , children : [
+      {title : 'Gold*' , price : '150.DH' },
+      {title : 'Silver*' , price : '150.DH' },
+    ]},
+    {Category : 'DENTAL CARE' , children : [
+      {title : 'Crest 3D toothpaste' , price : '25.DH' },
+      {title : 'Home Kit Whitening' , price : '400.DH' },
+      {title : 'Tooth Brush' , price : '25.DH' },
+      {title : 'Charcoal toothpaste powder' , price : '35.DH' },
+      {title : 'Turmeric toothpaste powder' , price : '35.DH' },
+    ]},
+  ] , 
+  AR : [
+    {Category : 'تبييض الأسنان' , children : [
+      {title : 'تبييض سريع' , price : '500 درهم' , session : 'جلسة واحدة' , duration : '30 دقيقة'},
+      {title : 'تبييض فاخر' , price : '700 درهم' , session : 'جلستان' , duration : '60 دقيقة'},
+      {title : 'تبييض إضافي' , price : '1200 درهم' , session : 'ثلاث جلسات' , duration : '120 دقيقة'},
+    ] , note : 'جلسة مزدوجة السعر لكل شخص*'},
+    {Category : 'جواهر' , children : [
+      {title : 'سواروفسكي' , price : '250 درهم' },
+      {title : 'ذهب' , price : '300 درهم' },
+      {title : 'فضة' , price : '300 درهم' },
+      {title : 'فم مضحك*' , price : '500 درهم' },
+    ] , note : 'فم مضحك* ابتداءً من 3 جواهر سواروفسكي*'},
+    {Category : 'مجوهرات الأسنان' , children : [
+      {title : 'ذهب*' , price : '150 درهم' },
+      {title : 'فضة*' , price : '150 درهم' },
+    ]},
+    {Category : 'العناية بالأسنان' , children : [
+      {title : 'معجون أسنان كريست ثلاثي الابعاد' , price : '25 درهم' },
+      {title : 'مجموعة تبييض منزلية' , price : '400 درهم' },
+      {title : 'فرشاة أسنان' , price : '25 درهم' },
+      {title : 'مسحوق معجون الفحم' , price : '35 درهم' },
+      {title : 'مسحوق معجون الكركم' , price : '35 درهم' },
+    ]},
+  ]
+
+
+}
 
 export const siteMapContent = [
   {link : 'Accuille' , path : '/'},

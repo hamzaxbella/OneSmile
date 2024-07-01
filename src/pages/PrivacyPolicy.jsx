@@ -9,7 +9,6 @@ export const PrivacyPolicy = () => {
     selectedLanguage === "FR" ? PrivacyPolicyContent.FR : PrivacyPolicyContent.AR;
   const textdir = selectedLanguage === "AR" ? "rtl" : "ltr"; // Set textdir to 'rtl' if selectedLanguage is 'AR'
   const font = selectedLanguage === "FR" ? "font-Inter" : "font-Cairo";
-  const Titlefont = selectedLanguage === "FR" ? "font-Inria" : "font-Cairo";
 
   
   return (

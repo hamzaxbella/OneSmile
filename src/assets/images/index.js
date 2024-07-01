@@ -7,10 +7,10 @@ import service2 from "./service-2.webp";
 import service3 from "./service-3.webp";
 import service4 from "./service-4.png";
 import serviceBanner from "./serviceBanner.webp";
-import ex1 from "./tes1.webp";
-import ex2 from "./tes2.webp";
-import ex3 from "./tes3.webp";
-import ex4 from "./tes4.webp";
+import ex1 from "./tes1.jpg";
+import ex2 from "./tes2.jpg";
+import ex3 from "./tes3.jpg";
+import ex4 from "./tes4.jpg";
 
 export {
   about,

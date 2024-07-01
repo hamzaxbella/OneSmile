@@ -9,6 +9,7 @@ import { Context } from "../App"
 import { useContext } from "react"
 import { ServiceBannerContent } from "../constants"
 import { ServicesSection } from "../sections/ServicesSection"
+import { Tarifs } from "../sections/Tarifs"
 
 export const Services = () => {
 
@@ -35,6 +36,10 @@ export const Services = () => {
       
       <section>
         < ServicesSection />
+      </section>
+
+      <section>
+        < Tarifs />
       </section>
       
       <section>

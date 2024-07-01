@@ -26,7 +26,7 @@ export const ContactSection = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_hfgky0b", "template_u8rbzmp", form.current, "tXf-_9Eo7Gvmia5jd")
+      .sendForm("service_pcdufpl", "template_7e1kay9", form.current, "tqwWb0TBJ_r5Y2cFV")
       .then(
         (response) => {
           console.log("Email sent successfully: ", response);

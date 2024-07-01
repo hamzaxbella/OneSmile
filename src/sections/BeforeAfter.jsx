@@ -22,7 +22,7 @@ export const BeforeAfter = () => {
       </div>
     <div className="grid grid-cols-1 md:grid-cols-2 place-items-center padding-y gap-16">
       {BeforAfterImages.map((img) => (
-        <img src={img} className="max-w-[400px] rounded-2xl" alt="before and after" />
+        <img src={img} className="max-w-[400px] h-[600px] object-cover rounded-2xl" alt="before and after" />
       ))}
     </div>
       </section>
