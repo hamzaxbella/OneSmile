@@ -135,20 +135,20 @@ export const ServicesContent = [
       img: service2,
     },
   },
-  {
-    FR: {
-      Title: "Snap-On Smile",
-      Description:
-        "Transformez instantanément votre sourire avec notre service Snap-On Smiley. Cette solution innovante vous permet d'obtenir un sourire impeccable sans recourir à des interventions invasives. Il vous suffit de clipser l'appareil personnalisé sur vos dents naturelles pour dissimuler les imperfections et améliorer l'apparence de votre sourire.",
-      img: service3,
-    },
-    AR: {
-      Title: "ابتسامة سريعة",
-      Description:
-        "قم بتحويل ابتسامتك على الفور من خلال خدمة سناب اون سمايل الخاصة بنا. يتيح لك هذا الحل المبتكر تحقيق ابتسامة خالية من العيوب دون اللجوء إلى إجراءات جراحية. ما عليك سوى تثبيت الطقم المخصص على أسنانك الطبيعية لإخفاء العيوب وتحسين مظهر ابتسامتك.",
-      img: service3,
-    },
-  },
+  // {
+  //   FR: {
+  //     Title: "Snap-On Smile",
+  //     Description:
+  //       "Transformez instantanément votre sourire avec notre service Snap-On Smiley. Cette solution innovante vous permet d'obtenir un sourire impeccable sans recourir à des interventions invasives. Il vous suffit de clipser l'appareil personnalisé sur vos dents naturelles pour dissimuler les imperfections et améliorer l'apparence de votre sourire.",
+  //     img: service3,
+  //   },
+  //   AR: {
+  //     Title: "ابتسامة سريعة",
+  //     Description:
+  //       "قم بتحويل ابتسامتك على الفور من خلال خدمة سناب اون سمايل الخاصة بنا. يتيح لك هذا الحل المبتكر تحقيق ابتسامة خالية من العيوب دون اللجوء إلى إجراءات جراحية. ما عليك سوى تثبيت الطقم المخصص على أسنانك الطبيعية لإخفاء العيوب وتحسين مظهر ابتسامتك.",
+  //     img: service3,
+  //   },
+  // },
   {
     FR: {
       Title: "Bijoux Dentaires & grillz",
@@ -294,7 +294,7 @@ export const contactInfo = {
       img: phone,
     },
     {
-      title: "Email",
+      title: "Location",
       lable:
         "Venez a notre cabinet et laissez-nous vous aider a obtenir beau sourire ",
       link: "Agadir, one smile",

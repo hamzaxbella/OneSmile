@@ -135,9 +135,9 @@ export const ContactSection = () => {
                 <p dir={textdir} className={`${font} py-2`}>
                   {card.lable}
                 </p>
-                <a dir={textdir} href="" className={`${font} underline`}>
+                <p dir={textdir} href="" className={`${font} underline`}>
                   {card.link}
-                </a>
+                </p>
               </div>
             </div>
           ))}
