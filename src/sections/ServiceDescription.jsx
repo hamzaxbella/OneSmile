@@ -80,32 +80,7 @@ export const ServiceDescription = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="bg-normal-cream rounded-2xl p-10 md:p-12 shadow-sm border ">
-            <h3 className={`${Titlefont} text-2xl md:text-3xl font-light text-gray-900 mb-4`}>
-              {selectedLanguage === 'FR' 
-                ? 'Intéressé par ce service ?' 
-                : 'مهتم بهذه الخدمة؟'
-              }
-            </h3>
-            <p className={`${font} text-lg font-light text-gray-600 mb-8 max-w-2xl mx-auto`}>
-              {selectedLanguage === 'FR'
-                ? 'Contactez notre équipe pour une consultation personnalisée.'
-                : 'اتصل بفريقنا للحصول على استشارة شخصية.'
-              }
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-primary text-white rounded-xl font-medium hover:bg-primary/90 transition-colors duration-300">
-                {selectedLanguage === 'FR' ? 'Prendre Rendez-vous' : 'احجز موعد'}
-              </button>
-              <button className="px-8 py-3 bg-transparent border border-gray-300 text-gray-700 rounded-xl font-medium hover:border-primary hover:text-primary transition-all duration-300">
-                {selectedLanguage === 'FR' ? 'Nous Contacter' : 'اتصل بنا'}
-              </button>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );
