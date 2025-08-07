@@ -9,7 +9,7 @@ import { RouteLayout } from "./layouts/RouteLayout";
 import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
-import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+// import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { Services } from "./pages/Services";
 import { SitePlan } from "./pages/SitePlan";
 import { TermsOfUse } from "./pages/TermsOfUse";
@@ -25,7 +25,7 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
         <Route path="sitemap" element={<SitePlan />} />
-        <Route path="privacypolicy" element={<PrivacyPolicy />} />
+        {/* <Route path="privacypolicy" element={<PrivacyPolicy />} /> */}
         <Route path="terms" element={<TermsOfUse />} />
         <Route path="*" element={<NotFound />} />
       </Route>

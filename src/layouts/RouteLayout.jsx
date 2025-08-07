@@ -12,6 +12,7 @@ export const RouteLayout = () => {
       <ScrollRestoration />
       <NavBar />
       <main>
+        
         <Outlet /> {/* Render the child routes here */}
       </main>
       <Map />

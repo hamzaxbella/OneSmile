@@ -20,13 +20,30 @@ export const ContactSection = () => {
   const handleChange = (e) => {
     const { name, value } = e.target; // Destructure name and value from event target
     setFormData({ ...formData, [name]: value }); // Use name instead of e.target.name
-  };
-
-  const handleSubmit = async (e) => {
+  };  const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Debug: Check if environment variables are loaded
+    console.log("EmailJS Service ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
+    console.log("EmailJS Template ID:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+    console.log("EmailJS Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+    // Fallback values if env variables are undefined
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_gw8nclb";
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_7e1kay9";
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "kFPLMjBTzhaZFLboH";
+
+    console.log("Using Service ID:", serviceId);
+    console.log("Using Template ID:", templateId);
+    console.log("Using Public Key:", publicKey);
 
     emailjs
-      .sendForm("service_pcdufpl", "template_7e1kay9", form.current, "tqwWb0TBJ_r5Y2cFV")
+      .sendForm(
+        serviceId,
+        templateId,
+        form.current,
+        publicKey
+      )
       .then(
         (response) => {
           console.log("Email sent successfully: ", response);

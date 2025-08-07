@@ -3,49 +3,109 @@ import { useContext } from "react";
 import { ServiceArticleContent } from "../constants";
 
 export const ServiceDescription = () => {
-  const [selectedLanguage] = useContext(Context); // Accessing selectedLanguage from the context
+  const [selectedLanguage] = useContext(Context);
   const content =
     selectedLanguage === "FR"
       ? ServiceArticleContent.FR
       : ServiceArticleContent.AR;
-  const textdir = selectedLanguage === "AR" ? "rtl" : "ltr"; // Set textdir to 'rtl' if selectedLanguage is 'AR'
+  const textdir = selectedLanguage === "AR" ? "rtl" : "ltr";
+  const font = selectedLanguage === "FR" ? "font-Inter" : "font-Cairo";
   const Titlefont = selectedLanguage === "FR" ? "font-Inria" : "font-Cairo";
 
   return (
-    <section className={`section-spacing padding-x`}>
-      <div
-        className={` mb-12 relative flex ${selectedLanguage == "AR" && "justify-end"}`}
-      >
-        <h1
-          dir={textdir}
-          className={`${Titlefont}  w-[20ch] section-title text-4xl`}
-        >
-          {content.title}
-        </h1>
-        <div
-          className={`absolute h-1 w-[100px] bg-primary bottom-[-14px] ${
-            selectedLanguage === "FR" ? "left-0" : "right-0"
-          }`}
-        ></div>
-      </div>
+    <section className="py-20 px-6 ">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16" dir={textdir}>
+          <h1 className={`${Titlefont} text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-6`}>
+            {content.title}
+          </h1>
+          <div className="w-20 h-px bg-primary mx-auto"></div>
+        </div>
 
-      <div className="padding-y">
-        <h2 className="text-3xl mb-2  text-browney-cream" dir={textdir}>{selectedLanguage === 'FR' ?  'Description :' : 'الوصف: '}</h2>
-        <p className="text-xl  opacity-70 leading-10" dir={textdir}>{content.description}</p>
-      </div>
+        {/* Grid Layout */}
+        <div className="grid gap-8">
+          {/* First Row - Description (Full Width) */}
+          <div className="bg-normal-cream rounded-2xl p-8 md:p-12 shadow-sm border " dir={textdir}>
+            <div className="mb-6">
+              <h2 className={`${font} text-sm font-medium tracking-wider text-gray-500 uppercase mb-3`}>
+                {selectedLanguage === 'FR' ? 'Description' : 'الوصف'}
+              </h2>
+              <div className={`w-12 h-0.5 bg-primary ${selectedLanguage === "AR" ? "mr-auto" : ""}`}></div>
+            </div>
+            <p className={`${font} text-lg md:text-xl font-light text-gray-700 leading-relaxed`}>
+              {content.description}
+            </p>
+          </div>
 
-      <div className="padding-y">
-        <h2 className="text-3xl mb-2  text-browney-cream" dir={textdir}>{selectedLanguage === 'FR' ?  'Procédure :' : 'الخطوات : '}</h2>
-        <p dir={textdir} className="text-xl  opacity-70 leading-10">{content.process}</p>
-      </div>
+          {/* Second Row - Procedure and Advantages (Two Columns) */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Procedure */}
+            <div className="bg-normal-cream rounded-2xl p-8 md:p-10 shadow-sm border " dir={textdir}>
+              <div className="mb-6">
+                <h2 className={`${font} text-sm font-medium tracking-wider text-gray-500 uppercase mb-3`}>
+                  {selectedLanguage === 'FR' ? 'Procédure' : 'الخطوات'}
+                </h2>
+                <div className={`w-12 h-0.5 bg-primary ${selectedLanguage === "AR" ? "mr-auto" : ""}`}></div>
+              </div>
+              <p className={`${font} text-lg font-light text-gray-700 leading-relaxed`}>
+                {content.process}
+              </p>
+            </div>
 
-      <div className="padding-y">
-        <h2 className="text-3xl mb-2  text-browney-cream" dir={textdir}>{selectedLanguage === 'FR' ?  'Advantages :' : 'المميزات : '}</h2>
-        <ul dir={textdir} className="list-disc">
-          {content.advantages.map((advantage) => (
-            <li ><p className="text-xl  opacity-70 leading-10 py-2" >{advantage}</p></li>
-          ))}
-        </ul>
+            {/* Advantages */}
+            <div className="bg-normal-cream rounded-2xl p-8 md:p-10 shadow-sm border " dir={textdir}>
+              <div className="mb-6">
+                <h2 className={`${font} text-sm font-medium tracking-wider text-gray-500 uppercase mb-3`}>
+                  {selectedLanguage === 'FR' ? 'Avantages' : 'المميزات'}
+                </h2>
+                <div className={`w-12 h-0.5 bg-primary ${selectedLanguage === "AR" ? "mr-auto" : ""}`}></div>
+              </div>
+              <div className="space-y-4">
+                {content.advantages.map((advantage, idx) => (
+                  <div 
+                    key={idx}
+                    className={`flex items-start gap-3 ${selectedLanguage === "AR" ? "flex-row-reverse" : ""}`}
+                  >
+                    <div className="flex-shrink-0 mt-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    </div>
+                    <p className={`${font} text-lg font-light text-gray-700 leading-relaxed flex-1`}>
+                      {advantage}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="mt-16 text-center">
+          <div className="bg-normal-cream rounded-2xl p-10 md:p-12 shadow-sm border ">
+            <h3 className={`${Titlefont} text-2xl md:text-3xl font-light text-gray-900 mb-4`}>
+              {selectedLanguage === 'FR' 
+                ? 'Intéressé par ce service ?' 
+                : 'مهتم بهذه الخدمة؟'
+              }
+            </h3>
+            <p className={`${font} text-lg font-light text-gray-600 mb-8 max-w-2xl mx-auto`}>
+              {selectedLanguage === 'FR'
+                ? 'Contactez notre équipe pour une consultation personnalisée.'
+                : 'اتصل بفريقنا للحصول على استشارة شخصية.'
+              }
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="px-8 py-3 bg-primary text-white rounded-xl font-medium hover:bg-primary/90 transition-colors duration-300">
+                {selectedLanguage === 'FR' ? 'Prendre Rendez-vous' : 'احجز موعد'}
+              </button>
+              <button className="px-8 py-3 bg-transparent border border-gray-300 text-gray-700 rounded-xl font-medium hover:border-primary hover:text-primary transition-all duration-300">
+                {selectedLanguage === 'FR' ? 'Nous Contacter' : 'اتصل بنا'}
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
