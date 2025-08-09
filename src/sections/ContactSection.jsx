@@ -29,9 +29,9 @@ export const ContactSection = () => {
     console.log("EmailJS Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
     // Fallback values if env variables are undefined
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_gw8nclb";
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_7e1kay9";
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "kFPLMjBTzhaZFLboH";
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID ;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ;
 
     console.log("Using Service ID:", serviceId);
     console.log("Using Template ID:", templateId);
