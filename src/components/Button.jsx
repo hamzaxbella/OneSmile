@@ -10,19 +10,13 @@ export const Button = ({ className, primary, label, path, nav, forBanner }) => {
 
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi({ namespace: '15min' });
-      cal.ns['15min']('ui', {
-        styles: { branding: { brandColor: '#000000' } },
+      const cal = await getCalApi({ namespace: '30min' });
+      cal('ui', {
         hideEventTypeDetails: false,
-        layout: 'month_view',
+        layout: 'month_view'
       });
     })();
   }, []);
-
-  const openCalPopup = () => {
-    const calButton = document.querySelector('button[data-cal-link]');
-    calButton && calButton.click();
-  };
 
   if (primary) {
     return (
@@ -37,16 +31,12 @@ export const Button = ({ className, primary, label, path, nav, forBanner }) => {
   } else {
     return (
       <button
-        onClick={openCalPopup}
+        data-cal-namespace="30min"
+        data-cal-link="one-smile-ozuc83/30min"
+        data-cal-config='{"layout":"month_view"}'
         className={`${nav && '!bg-primary hover:!bg-browney-cream border-0 text-white-smoke'} transition-colors duration-300 bg-transparent border border-3 border-black text-black hover:bg-white-smoke ${forBanner && 'border-white-smoke text-white-smoke hover:text-black'} py-2 px-6 font-light ${font} ${className}`}
       >
         {content}
-        <button
-          style={{ display: 'none' }}
-          data-cal-namespace="15min"
-          data-cal-link="hamza-xp8ep5/15min"
-          data-cal-config='{"layout":"month_view"}'
-        ></button>
       </button>
     );
   }
