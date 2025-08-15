@@ -13,24 +13,28 @@ export const ServicesSection = () => {
 
   
   return (
-    <section className="section padding-y" id="services-section">
-      <div className="relative text-center mb-6">
-        <h1 dir={textdir} className={` ${Titlefont} section-title text-4xl`}>
+    <section className="section padding-y overflow-x-hidden" id="services-section" aria-label="Services dentaires">
+      <header className="relative text-center mb-6">
+        <h2 dir={textdir} className={` ${Titlefont} section-title text-4xl`}>
           {selectedLanguage === "FR" ? "Nos Services" : "خدماتنا"}
-        </h1>
+        </h2>
         <div
           className={`absolute h-1 w-[100px]  bg-primary top-[-4px] -translate-x-1/2 left-1/2`}
+          aria-hidden="true"
         ></div>
-      </div>
-      <div>
+      </header>
+
+      <div className="overflow-x-hidden" role="list" aria-label="Liste des services dentaires">
         {ServicesContent.map((service, index) => (
-          <div
+          <article
             key={index} 
             className={` ${
               index % 2 === 0
                 ? "bg-dark-cream"
                 : " bg-normal-cream"
             }`}
+            role="listitem"
+            aria-label={selectedLanguage === "FR" ? service.FR.Title : service.AR.Title}
           >
             <div className = {`max-container flex flex-col md:flex-row justify-center items-center padding-x py-6 gap-6 ${
               index % 2 === 0
@@ -57,6 +61,22 @@ export const ServicesSection = () => {
                     ? service.FR.Description
                     : service.AR.Description}
                 </p>
+                
+                {/* Appointment Button for each service */}
+                <div className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'} mt-4`}>
+                  <button 
+                    data-cal-namespace="30min"
+                    data-cal-link="one-smile-ozuc83/30min"
+                    data-cal-config='{"layout":"month_view"}'
+                    className={`inline-flex items-center gap-2 px-6 py-3 ${
+                      index % 2 === 0 
+                        ? 'bg-white text-primary hover:bg-gray-50' 
+                        : 'bg-primary text-white hover:bg-primary/90'
+                    }  font-medium transition-colors duration-300 ${font}`}
+                  >
+                    <span>{selectedLanguage === "FR" ? "Prendre Rendez-vous" : "احجز موعد"}</span>
+                  </button>
+                </div>
               </div>
               <img
               className="service-img "
@@ -66,12 +86,13 @@ export const ServicesSection = () => {
                 }
                 alt={
                   selectedLanguage === "FR"
-                    ? service.FR.Title
-                    : service.AR.Title
+                    ? `${service.FR.Title} - OneSmile clinique dentaire`
+                    : `${service.AR.Title} - عيادة OneSmile للأسنان`
                 }
+                loading="lazy"
               />
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>

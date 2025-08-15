@@ -114,7 +114,7 @@ export const Animate = () => {
           scrub: 2,
         },
         opacity: 0,
-        x: index % 2 === 0 ? 100 : -100,
+        scale: 0.8,
         duration: 1,
       });
     });
@@ -129,7 +129,7 @@ export const Animate = () => {
           scrub: 2,
         },
         opacity: 0,
-        x: index % 2 === 0 ? -150 : 150,
+        y: 30,
         duration: 1,
       });
     });

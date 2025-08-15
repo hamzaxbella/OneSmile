@@ -6,9 +6,6 @@ import {
   phone,
   threads,
   tiktok,
-  burger_menu,
-  accordion,
-  star,
 } from "../assets/icons";
 
 import {
@@ -20,6 +17,7 @@ import {
   ex2,
   ex3,
   ex4,
+  service5,
 } from "../assets/images";
 
 export const socialLinks = [
@@ -135,20 +133,48 @@ export const ServicesContent = [
       img: service2,
     },
   },
-  // {
-  //   FR: {
-  //     Title: "Snap-On Smile",
-  //     Description:
-  //       "Transformez instantanément votre sourire avec notre service Snap-On Smiley. Cette solution innovante vous permet d'obtenir un sourire impeccable sans recourir à des interventions invasives. Il vous suffit de clipser l'appareil personnalisé sur vos dents naturelles pour dissimuler les imperfections et améliorer l'apparence de votre sourire.",
-  //     img: service3,
-  //   },
-  //   AR: {
-  //     Title: "ابتسامة سريعة",
-  //     Description:
-  //       "قم بتحويل ابتسامتك على الفور من خلال خدمة سناب اون سمايل الخاصة بنا. يتيح لك هذا الحل المبتكر تحقيق ابتسامة خالية من العيوب دون اللجوء إلى إجراءات جراحية. ما عليك سوى تثبيت الطقم المخصص على أسنانك الطبيعية لإخفاء العيوب وتحسين مظهر ابتسامتك.",
-  //     img: service3,
-  //   },
-  // },
+  {
+    FR: {
+      Title: "Snap-On Smile",
+      Description:
+        "Transformez instantanément votre sourire avec notre service Snap-On Smile. Cette solution innovante vous permet d'obtenir un sourire impeccable sans recourir à des interventions invasives. Il vous suffit de clipser l'appareil personnalisé sur vos dents naturelles pour dissimuler les imperfections et améliorer l'apparence de votre sourire.",
+      img: service3,
+    },
+    AR: {
+      Title: "ابتسامة سريعة",
+      Description:
+        "قم بتحويل ابتسامتك على الفور من خلال خدمة سناب اون سمايل الخاصة بنا. يتيح لك هذا الحل المبتكر تحقيق ابتسامة خالية من العيوب دون اللجوء إلى إجراءات جراحية. ما عليك سوى تثبيت الطقم المخصص على أسنانك الطبيعية لإخفاء العيوب وتحسين مظهر ابتسامتك.",
+      img: service3,
+    },
+  },
+  {
+    FR: {
+      Title: "Prothèse dentaire",
+      Description:
+        "Retrouvez un sourire complet et fonctionnel avec nos prothèses dentaires sur mesure. Nos prothèses sont conçues pour s'adapter parfaitement à votre bouche, offrant confort, esthétique et fonctionnalité. Que vous ayez besoin d'une prothèse partielle ou complète, notre équipe vous accompagne pour retrouver confiance en votre sourire.",
+      img: service2,
+    },
+    AR: {
+      Title: "أطقم الأسنان",
+      Description:
+        "استعد ابتسامة كاملة ووظيفية مع أطقم الأسنان المخصصة لدينا. تم تصميم أطقمنا لتناسب فمك بشكل مثالي، مما يوفر الراحة والجمال والوظائف. سواء كنت بحاجة إلى طقم جزئي أو كامل، فريقنا يساعدك على استعادة الثقة في ابتسامتك.",
+      img: service2,
+    },
+  },
+  {
+    FR: {
+      Title: "Gouttière dentaire",
+      Description:
+        "Protégez vos dents et améliorez votre sourire avec nos gouttières dentaires personnalisées. Que ce soit pour le blanchiment à domicile, la protection nocturne contre le grincement des dents, ou l'alignement dentaire, nos gouttières sont fabriquées sur mesure pour un ajustement parfait et des résultats optimaux.",
+      img: service5,
+    },
+    AR: {
+      Title: "واقي الأسنان",
+      Description:
+        "احمي أسنانك وحسن ابتسامتك مع واقيات الأسنان المخصصة لدينا. سواء كان ذلك للتبييض في المنزل، أو الحماية الليلية من صرير الأسنان، أو تقويم الأسنان، يتم تصنيع واقياتنا حسب الطلب للحصول على ملاءمة مثالية ونتائج مثلى.",
+      img: service4,
+    },
+  },
   {
     FR: {
       Title: "Bijoux Dentaires & grillz",

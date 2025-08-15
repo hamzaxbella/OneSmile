@@ -20,9 +20,11 @@ export const Button = ({ className, primary, label, path, nav, forBanner }) => {
 
   if (primary) {
     return (
-      <Link to={path && path}>
+      <Link to={path && path} aria-label={`${content} - Navigation link`}>
         <button
           className={`transition-colors duration-300 bg-primary hover:bg-browney-cream text-white-smoke ${forBanner && 'border-white-smoke text-white-smoke hover:text-black'} py-2 px-6 font-light ${font} ${className}`}
+          type="button"
+          aria-label={content}
         >
           {content}
         </button>

@@ -11,6 +11,7 @@ import ex1 from "./tes1.jpg";
 import ex2 from "./tes2.jpg";
 import ex3 from "./tes3.jpg";
 import ex4 from "./tes4.jpg";
+import service5 from "./service-5.png"
 
 export {
   about,
@@ -26,4 +27,5 @@ export {
   ex2,
   ex3,
   ex4,
+  service5,
 };

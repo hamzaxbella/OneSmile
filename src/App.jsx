@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -14,6 +14,7 @@ import { Services } from "./pages/Services";
 import { SitePlan } from "./pages/SitePlan";
 import { TermsOfUse } from "./pages/TermsOfUse";
 import { Animate } from "./Animate";
+import { preloadCriticalResources, optimizeWebVitals } from "./utils/performance";
 
 export const Context = React.createContext();
 
@@ -32,13 +33,16 @@ function App() {
     )
   );
 
-
   const [selectedLanguage, setSelectedLanguage] = useState("FR");
 
-
+  // Performance optimizations on app load
+  useEffect(() => {
+    preloadCriticalResources();
+    optimizeWebVitals();
+  }, []);
 
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <Context.Provider value={[selectedLanguage, setSelectedLanguage]} >
         <RouterProvider router={router} />
         <Animate />

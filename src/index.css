@@ -11,9 +11,16 @@
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background: #EFE2D9;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 @layer components {
