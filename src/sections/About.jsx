@@ -14,7 +14,7 @@ export const About = () => {
   return (
     <section id="about-section" className="section max-container padding-y padding-x flex-col-reverse md:flex-row flex gap-6 ">
       <article className="flex-1">
-        <img id="about-img" src={about} className="" alt="about image" />
+        <img id="about-img" className={"h-auto"} src={about} alt="about image" />
       </article>
 
       <article className="about-text flex-1 flex flex-col justify-center gap-12">

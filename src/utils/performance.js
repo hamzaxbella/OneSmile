@@ -61,10 +61,7 @@ export const preloadCriticalResources = () => {
 // Core Web Vitals optimization
 export const optimizeWebVitals = () => {
   // Reduce layout shift by setting image dimensions
-  const images = document.querySelectorAll('img:not([width]):not([height])');
-  images.forEach(img => {
-    img.style.aspectRatio = '16/9'; // Default aspect ratio
-  });
+ 
 
   // Optimize font loading
   if ('fontDisplay' in document.documentElement.style) {

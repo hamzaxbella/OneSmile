@@ -18,6 +18,7 @@ import {
   ex3,
   ex4,
   service5,
+  service6
 } from "../assets/images";
 
 export const socialLinks = [
@@ -152,13 +153,13 @@ export const ServicesContent = [
       Title: "Prothèse dentaire",
       Description:
         "Retrouvez un sourire complet et fonctionnel avec nos prothèses dentaires sur mesure. Nos prothèses sont conçues pour s'adapter parfaitement à votre bouche, offrant confort, esthétique et fonctionnalité. Que vous ayez besoin d'une prothèse partielle ou complète, notre équipe vous accompagne pour retrouver confiance en votre sourire.",
-      img: service2,
+      img: service6,
     },
     AR: {
       Title: "أطقم الأسنان",
       Description:
         "استعد ابتسامة كاملة ووظيفية مع أطقم الأسنان المخصصة لدينا. تم تصميم أطقمنا لتناسب فمك بشكل مثالي، مما يوفر الراحة والجمال والوظائف. سواء كنت بحاجة إلى طقم جزئي أو كامل، فريقنا يساعدك على استعادة الثقة في ابتسامتك.",
-      img: service2,
+      img: service6,
     },
   },
   {

@@ -12,7 +12,7 @@ import ex2 from "./tes2.jpg";
 import ex3 from "./tes3.jpg";
 import ex4 from "./tes4.jpg";
 import service5 from "./service-5.png"
-
+import service6 from "./prothese.png"
 export {
   about,
   contactBanner,
@@ -28,4 +28,5 @@ export {
   ex3,
   ex4,
   service5,
+  service6
 };
