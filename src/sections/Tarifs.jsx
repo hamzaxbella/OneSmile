@@ -39,7 +39,7 @@ export const Tarifs = () => {
                 </div>
               ))}
             </div>
-            {tarif.note && <p className="mt-5 text-purple-400 font-bold">{tarif.note}</p>}
+            {/* {tarif.note && <p className="mt-5 text-purple-400 font-bold">{tarif.note}</p>} */}
           </div>
         ))}
       </div>

@@ -505,48 +505,49 @@ export const  tarifs = {
       {title : 'Fast white' , price : '500.DH' , session : 'Une séance' , duration : '30min'},
       {title : 'Glamourous white' , price : '700.DH' , session : 'Deux séance' , duration : '60min'},
       {title : 'Extra white' , price : '1200.DH' , session : 'Trois séance' , duration : '120min'},
+      {title : 'GEMS & GRILLS' , price : 'appartir 150 DH' , session : '' , duration : ''},
     ] , note : 'Séance duo prix par personne*'},
-    {Category : 'GEMS' , children : [
-      {title : 'Swarovski' , price : '250.DH' },
-      {title : 'Gold' , price : '300.DH' },
-      {title : 'Silver' , price : '300.DH' },
-      {title : 'Funny mouth*' , price : '500.DH' },
-    ] , note : 'Funny mouth* a partir de 3 gems swarovski*'},
-    {Category : 'GRILLS' , children : [
-      {title : 'Gold*' , price : '150.DH' },
-      {title : 'Silver*' , price : '150.DH' },
-    ]},
-    {Category : 'DENTAL CARE' , children : [
-      {title : 'Crest 3D toothpaste' , price : '25.DH' },
-      {title : 'Home Kit Whitening' , price : '400.DH' },
-      {title : 'Tooth Brush' , price : '25.DH' },
-      {title : 'Charcoal toothpaste powder' , price : '35.DH' },
-      {title : 'Turmeric toothpaste powder' , price : '35.DH' },
-    ]},
+    // {Category : 'GEMS & GRILLS' , children : [
+    //   {title : 'Swarovski' , price : '250.DH' },
+    //   {title : 'Gold' , price : '300.DH' },
+    //   {title : 'Silver' , price : '300.DH' },
+    //   {title : 'Funny mouth*' , price : '500.DH' },
+    // ] , note : 'Funny mouth* a partir de 3 gems swarovski*'},
+    // {Category : 'GRILLS' , children : [
+    //   {title : 'GRILLS *' , price : '150.DH' },
+    //   {title : 'Silver*' , price : '150.DH' },
+    // ]},
+    // {Category : 'DENTAL CARE' , children : [
+    //   {title : 'Crest 3D toothpaste' , price : '25.DH' },
+    //   {title : 'Home Kit Whitening' , price : '400.DH' },
+    //   {title : 'Tooth Brush' , price : '25.DH' },
+    //   {title : 'Charcoal toothpaste powder' , price : '35.DH' },
+    //   {title : 'Turmeric toothpaste powder' , price : '35.DH' },
+    // ]},
   ] , 
   AR : [
     {Category : 'تبييض الأسنان' , children : [
       {title : 'تبييض سريع' , price : '500 درهم' , session : 'جلسة واحدة' , duration : '30 دقيقة'},
       {title : 'تبييض فاخر' , price : '700 درهم' , session : 'جلستان' , duration : '60 دقيقة'},
-      {title : 'تبييض إضافي' , price : '1200 درهم' , session : 'ثلاث جلسات' , duration : '120 دقيقة'},
+      {title : 'تبييض إضافي' , price : '1200 درهم' , session : '' , duration : ''},
     ] , note : 'جلسة مزدوجة السعر لكل شخص*'},
-    {Category : 'جواهر' , children : [
-      {title : 'سواروفسكي' , price : '250 درهم' },
-      {title : 'ذهب' , price : '300 درهم' },
-      {title : 'فضة' , price : '300 درهم' },
-      {title : 'فم مضحك*' , price : '500 درهم' },
-    ] , note : 'فم مضحك* ابتداءً من 3 جواهر سواروفسكي*'},
-    {Category : 'مجوهرات الأسنان' , children : [
-      {title : 'ذهب*' , price : '150 درهم' },
-      {title : 'فضة*' , price : '150 درهم' },
-    ]},
-    {Category : 'العناية بالأسنان' , children : [
-      {title : 'معجون أسنان كريست ثلاثي الابعاد' , price : '25 درهم' },
-      {title : 'مجموعة تبييض منزلية' , price : '400 درهم' },
-      {title : 'فرشاة أسنان' , price : '25 درهم' },
-      {title : 'مسحوق معجون الفحم' , price : '35 درهم' },
-      {title : 'مسحوق معجون الكركم' , price : '35 درهم' },
-    ]},
+    // {Category : 'جواهر' , children : [
+    //   {title : 'سواروفسكي' , price : '250 درهم' },
+    //   {title : 'ذهب' , price : '300 درهم' },
+    //   {title : 'فضة' , price : '300 درهم' },
+    //   {title : 'فم مضحك*' , price : '500 درهم' },
+    // ] , note : 'فم مضحك* ابتداءً من 3 جواهر سواروفسكي*'},
+    // {Category : 'مجوهرات الأسنان' , children : [
+    //   {title : 'ذهب*' , price : '150 درهم' },
+    //   {title : 'فضة*' , price : '150 درهم' },
+    // ]},
+    // {Category : 'العناية بالأسنان' , children : [
+    //   {title : 'معجون أسنان كريست ثلاثي الابعاد' , price : '25 درهم' },
+    //   {title : 'مجموعة تبييض منزلية' , price : '400 درهم' },
+    //   {title : 'فرشاة أسنان' , price : '25 درهم' },
+    //   {title : 'مسحوق معجون الفحم' , price : '35 درهم' },
+    //   {title : 'مسحوق معجون الكركم' , price : '35 درهم' },
+    // ]},
   ]
 
 
