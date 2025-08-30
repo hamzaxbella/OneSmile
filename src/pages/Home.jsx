@@ -25,14 +25,14 @@ export const Home = () => {
   // SEO data for home page
   const seoData = {
     FR: {
-      title: "OneSmile - Clinique Dentaire Moderne au Maroc | Soins Dentaires de Qualité",
-      description: "OneSmile, votre clinique dentaire de confiance au Maroc. Implants dentaires, orthodontie, blanchiment, couronnes et soins dentaires modernes. Prenez rendez-vous dès aujourd'hui.",
-      keywords: "dentiste maroc, clinique dentaire, implants dentaires, orthodontie, blanchiment dentaire, couronne dentaire, soins dentaires, OneSmile, dentiste casablanca, dentiste rabat"
+      title: "OneSmile - Institut de Blanchiment Dentaire Agadir | Éclat et Beauté du Sourire",
+      description: "OneSmile, institut de blanchiment dentaire spécialisé dans l'éclat et la beauté de votre sourire à Agadir. Résultat professionnel et durable en toute sécurité. Prenez rendez-vous dès aujourd'hui.",
+      keywords: "blanchiment des dents agadir, blanchiment dentaire agadir, one smile, blanchiment dentaire, blanchiment dentaire maroc, blanchiment, onesmile, blanchiment des dents maroc, dentiste agadir, one smile dentaire, teeth whitening, dental bonding, teeth wash, cabinet dentaire smile, teeth whitening near me, one agadir, braces teeth, dental one, clear aligners near me, agadir dentist"
     },
     AR: {
-      title: "OneSmile - عيادة أسنان حديثة في المغرب | رعاية أسنان عالية الجودة",
-      description: "OneSmile، عيادة الأسنان الموثوقة في المغرب. زراعة الأسنان، تقويم الأسنان، تبييض الأسنان، التيجان والرعاية الحديثة للأسنان. احجز موعدك اليوم.",
-      keywords: "طبيب أسنان المغرب, عيادة أسنان, زراعة الأسنان, تقويم الأسنان, تبييض الأسنان, تاج الأسنان, رعاية الأسنان, OneSmile"
+      title: "OneSmile - معهد تبييض الأسنان أكادير | إشراق وجمال ابتسامتك",
+      description: "OneSmile، معهد تبييض الأسنان المتخصص في إشراق وجمال ابتسامتك في أكادير. نتائج مهنية ودائمة بأمان تام. احجز موعدك اليوم.",
+      keywords: "تبييض الأسنان أكادير, معهد تبييض الأسنان, تبييض الأسنان المغرب, أطباء الأسنان أكادير, one smile, تبييض الأسنان, جمال الابتسامة"
     }
   };
   

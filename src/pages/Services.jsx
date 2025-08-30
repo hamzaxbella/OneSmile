@@ -20,14 +20,14 @@ export const Services = () => {
   // SEO data for services page
   const seoData = {
     FR: {
-      title: "Nos Services Dentaires | OneSmile - Clinique Dentaire Maroc",
-      description: "Découvrez tous nos services dentaires : implants, orthodontie, blanchiment, couronnes, prothèses dentaires et gouttières. Soins modernes et techniques avancées au Maroc.",
-      keywords: "services dentaires maroc, implants dentaires, orthodontie, blanchiment dentaire, couronne dentaire, prothèse dentaire, gouttière dentaire, snap on smile, soins dentaires"
+      title: "Nos Services de Blanchiment | OneSmile - Institut Blanchiment Dentaire Agadir",
+      description: "Découvrez nos services de blanchiment dentaire professionnels : blanchiment laser, gouttières, dental bonding et soins esthétiques. Institut spécialisé à Agadir pour un sourire éclatant.",
+      keywords: "blanchiment des dents agadir, blanchiment dentaire agadir, teeth whitening, dental bonding, teeth wash, cabinet dentaire smile, blanchiment laser, gouttières de blanchiment, esthétique dentaire agadir"
     },
     AR: {
-      title: "خدماتنا السنية | OneSmile - عيادة أسنان المغرب",
-      description: "اكتشف جميع خدماتنا السنية: زراعة الأسنان، تقويم الأسنان، تبييض الأسنان، التيجان، أطقم الأسنان والواقيات. رعاية حديثة وتقنيات متقدمة في المغرب.",
-      keywords: "خدمات الأسنان المغرب, زراعة الأسنان, تقويم الأسنان, تبييض الأسنان, تاج الأسنان, طقم أسنان, واقي الأسنان"
+      title: "خدمات التبييض | OneSmile - معهد تبييض الأسنان أكادير",
+      description: "اكتشف خدمات تبييض الأسنان الاحترافية: تبييض بالليزر، قوالب التبييض، والعناية التجميلية. معهد متخصص في أكادير لابتسامة مشرقة.",
+      keywords: "تبييض الأسنان أكادير, معهد تبييض الأسنان, تبييض بالليزر, العناية التجميلية للأسنان, ابتسامة مشرقة"
     }
   };
   

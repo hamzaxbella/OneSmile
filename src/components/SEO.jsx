@@ -102,51 +102,62 @@ export const SEO = ({
 // Structured Data Templates
 export const createLocalBusinessSchema = (language = 'FR') => ({
   "@context": "https://schema.org",
-  "@type": "Dentist",
+  "@type": "DentalClinic",
   "name": "OneSmile",
   "description": language === 'FR' 
-    ? "Clinique dentaire moderne offrant des soins dentaires de qualité au Maroc"
-    : "عيادة أسنان حديثة تقدم رعاية أسنان عالية الجودة في المغرب",
+    ? "Institut de blanchiment dentaire spécialisé dans l'éclat et la beauté de votre sourire à Agadir"
+    : "معهد تبييض الأسنان المتخصص في إشراق وجمال ابتسامتك في أكادير",
   "url": "https://onesmile.ma",
-  "logo": "https://onesmile.ma/src/assets/images/logo.png",
+  "logo": "https://onesmile.ma/title_logo.png",
   "image": "https://onesmile.ma/src/assets/images/hero.webp",
   "telephone": "+212 XX XX XX XX", // Update with actual phone
   "email": "contact@onesmile.ma", // Update with actual email
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Votre adresse", // Update with actual address
-    "addressLocality": "Casablanca", // Update with actual city
-    "addressRegion": "Casablanca-Settat", // Update with actual region
-    "postalCode": "20000", // Update with actual postal code
+    "addressLocality": "Agadir",
+    "addressRegion": "Souss-Massa",
+    "postalCode": "80000", // Update with actual postal code
     "addressCountry": "MA"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "33.5731", // Update with actual coordinates
-    "longitude": "-7.5898"
+    "latitude": "30.4278", // Agadir coordinates
+    "longitude": "-9.5981"
   },
   "openingHours": [
     "Mo-Fr 09:00-18:00",
     "Sa 09:00-14:00"
   ],
   "services": [
-    "Dental Implants",
-    "Orthodontics",
     "Teeth Whitening",
-    "Dental Crowns",
-    "Root Canal Treatment",
-    "Periodontal Treatment"
+    "Dental Bonding", 
+    "Teeth Wash",
+    "Clear Aligners",
+    "Cosmetic Dentistry",
+    "Dental Aesthetics"
   ],
-  "areaServed": {
-    "@type": "Country",
-    "name": "Morocco"
-  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Agadir"
+    },
+    {
+      "@type": "Country", 
+      "name": "Morocco"
+    }
+  ],
   "priceRange": "$$",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "127"
-  }
+    "ratingValue": "4.9",
+    "reviewCount": "150"
+  },
+  "speciality": [
+    "Teeth Whitening",
+    "Cosmetic Dentistry",
+    "Dental Aesthetics"
+  ]
 });
 
 export const createWebsiteSchema = () => ({

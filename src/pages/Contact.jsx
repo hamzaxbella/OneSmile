@@ -15,14 +15,14 @@ export const Contact = () => {
   // SEO data for contact page
   const seoData = {
     FR: {
-      title: "Contactez-nous | OneSmile - Prenez Rendez-vous",
-      description: "Contactez OneSmile pour prendre rendez-vous. Notre équipe dentaire experte est à votre service. Appelez-nous ou remplissez notre formulaire de contact en ligne.",
-      keywords: "contact dentiste maroc, rendez-vous dentaire, OneSmile contact, clinique dentaire contact, urgence dentaire maroc"
+      title: "Contactez-nous | OneSmile Agadir - Prenez Rendez-vous Blanchiment Dentaire",
+      description: "Contactez OneSmile à Agadir pour prendre rendez-vous. Notre institut de blanchiment dentaire est à votre service. Appelez-nous ou remplissez notre formulaire de contact en ligne.",
+      keywords: "contact oneSmile agadir, rendez-vous blanchiment dentaire, institut blanchiment agadir, teeth whitening near me, one agadir, cabinet dentaire agadir"
     },
     AR: {
-      title: "اتصل بنا | OneSmile - احجز موعدك",
-      description: "اتصل بـ OneSmile لحجز موعد. فريقنا الطبي المتخصص في خدمتك. اتصل بنا أو املأ نموذج الاتصال عبر الإنترنت.",
-      keywords: "اتصال طبيب أسنان المغرب, موعد طبيب أسنان, OneSmile اتصال, عيادة أسنان اتصال, طوارئ أسنان المغرب"
+      title: "اتصل بنا | OneSmile أكادير - احجز موعد تبييض الأسنان",
+      description: "اتصل بـ OneSmile في أكادير لحجز موعد. معهدنا لتبييض الأسنان في خدمتك. اتصل بنا أو املأ نموذج الاتصال عبر الإنترنت.",
+      keywords: "اتصال OneSmile أكادير, موعد تبييض الأسنان, معهد تبييض أكادير, تبييض الأسنان القريب"
     }
   };
   
