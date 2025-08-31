@@ -15,6 +15,7 @@ import { SitePlan } from "./pages/SitePlan";
 import { TermsOfUse } from "./pages/TermsOfUse";
 import { Animate } from "./Animate";
 import { preloadCriticalResources, optimizeWebVitals } from "./utils/performance";
+import ChatBot from "./components/ChatBot";
 
 export const Context = React.createContext();
 
@@ -46,6 +47,7 @@ function App() {
       <Context.Provider value={[selectedLanguage, setSelectedLanguage]} >
         <RouterProvider router={router} />
         <Animate />
+        <ChatBot />
       </Context.Provider>
     </div>
   );
