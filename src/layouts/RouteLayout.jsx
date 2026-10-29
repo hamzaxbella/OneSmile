@@ -5,7 +5,6 @@ import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
 import { CopyRight } from "../components/CopyRight";
 import { Map } from "../components/Map";
-import { Analytics } from "@vercel/analytics/next"
 
 export const RouteLayout = () => {
   return (
